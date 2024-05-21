@@ -3,7 +3,7 @@ export const experiences = [
     id: 1,
     bgClass: "bg-catkrill",
     session: "2023 - Present",
-    role: "Font-end Developer",
+    role: "Front-end Developer",
     company: "MUICT Dev club",
   },
   {

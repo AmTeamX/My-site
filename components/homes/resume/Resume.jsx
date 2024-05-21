@@ -24,8 +24,6 @@ export default function Resume() {
 
         <div className="section-wrapper bg-light-white-2 pt-70 pb-60 pl-60 pr-60">
           <div className="row">
-            <Skills />
-
             <Knowledges />
           </div>
         </div>

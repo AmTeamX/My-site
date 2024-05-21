@@ -19,7 +19,7 @@ export default function Contact() {
             <h5 className="contact-title">
             Get to know me more
             </h5>
-            <h5 className="contact-title-b">Get in touch.</h5>
+            <h5 className="contact-title-b">drop your contact.</h5>
            <ContactForm/>
           </div>
         </div>

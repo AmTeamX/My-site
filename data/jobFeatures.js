@@ -2,17 +2,17 @@ export const items = [
   {
     id: 1,
     icon: "/assets/img/app-development.svg",
-    title: "App Development",
+    title: "mobile Developer",
     description:
-      "Develop an Application by using Flutter & Dart with back-end Using Firebase Firestore.",
+      "Develop an application by using Flutter & Dart with back-end using Firebase Firestore.",
     bg: "bg-catkrill",
   },
   {
     id: 2,
     icon: "/assets/img/webdev.svg",
-    title: "Web Development",
+    title: "Web Developer",
     description:
-      "I'm Practicing Develop website by using React.js or Next.js and Back-end by using Node.js or Bun ",
+      "I'm practicing develop website by using React.js and Next.js and back-end by using Node.js and Bun ",
     bg: "bg-prink",
   },
   {
@@ -20,7 +20,7 @@ export const items = [
     icon: "/assets/img/teach.svg",
     title: "Teaching programming",
     description:
-      "Teach students in BSD Education about basic of HTML, CSS, Javascript, basic of python and basic of AI/VR.",
+      "Teach students in BSD education about basic of HTML, CSS, Javascript, basic of python and basic of AI/VR.",
     bg: "bg-prink",
   },
   {

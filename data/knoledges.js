@@ -4,5 +4,10 @@ export const knoledges = [
   "Time Management",
   "Flexibility",
   "Presentation",
-  "self-learning"
+  "self-learning",
+  "HTML",
+  "CSS",
+  "Javascript",
+  "Flutter&Dart",
+  "Node.js"
 ];
