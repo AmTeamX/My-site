@@ -2903,7 +2903,6 @@ textarea:focus::placeholder {
   line-height: 24px;
   font-weight: 400;
   color: var(--common-black);
-  text-transform: capitalize;
   margin-bottom: 0;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
