@@ -4,7 +4,7 @@ export const items = [
     icon: "/assets/img/app-development.svg",
     title: "mobile Developer",
     description:
-      "Develop an application by using Flutter & Dart with back-end using Firebase Firestore.",
+      "Develop applications using Flutter and Dart.",
     bg: "bg-catkrill",
   },
   {
@@ -12,23 +12,23 @@ export const items = [
     icon: "/assets/img/webdev.svg",
     title: "Web Developer",
     description:
-      "I'm practicing develop website by using React.js and Next.js and back-end by using Node.js and Bun ",
+      "Create websites with React.js and Next.js.",
     bg: "bg-prink",
   },
   {
     id: 3,
     icon: "/assets/img/teach.svg",
-    title: "Teaching programming",
+    title: "Programming teacher",
     description:
-      "Teach students in BSD education about basic of HTML, CSS, Javascript, basic of python and basic of AI/VR.",
+      "Instruct students at BSD Education in the fundamentals of HTML, CSS, JavaScript, Python, and AI/VR basics.",
     bg: "bg-prink",
   },
   {
     id: 4,
-    icon: "/assets/img/photograph.svg",
-    title: "Photography",
+    icon: "/assets/img/ai.svg",
+    title: "AI Engineer",
     description:
-      "Sometime, I use my freetime to find some place to take photo of my friends.",
+      "Embark on a journey to develop and implement AI solutions.",
     bg: "bg-catkrill",
   },
 

@@ -1,13 +1,11 @@
 export const knoledges = [
-  "Communication",
-  "Social Media",
+  "Effective Communication",
   "Time Management",
-  "Flexibility",
-  "Presentation",
-  "self-learning",
-  "HTML",
-  "CSS",
-  "Javascript",
-  "Flutter&Dart",
+  "Professional Presentation",
+  "Self-Learning and Adaptability",
+  "HTML5",
+  "CSS3",
+  "JavaScript",
+  "Flutter & Dart",
   "Node.js"
 ];
