@@ -1,11 +1,11 @@
 "use client";
 
 import { menuItemsTwo } from "@/data/menu";
-import Link from "next/link";
-import { useState, useEffect } from "react";
-import Menu from "../menus/Menu";
-import { usePathname } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+import Menu from "../menus/Menu";
 export default function HeaderTwo() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -62,7 +62,7 @@ export default function HeaderTwo() {
                   <Image
                     width={153}
                     height={32}
-                    src="/assets/img/logo/logo-2.png"
+                    src="/assets/img/logo/FullLogoPink.png"
                     alt="logo"
                   />
                 </Link>

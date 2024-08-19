@@ -1,9 +1,9 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import Menu from "../menus/Menu";
 import { menuItemsThree } from "@/data/menu";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import Menu from "../menus/Menu";
 
 export default function HeaderFour() {
   const [darkMode, setDarkMode] = useState(false);
@@ -63,7 +63,7 @@ export default function HeaderFour() {
                   <Image
                     width={153}
                     height={32}
-                    src="/assets/img/logo/logo-2.png"
+                    src="/assets/img/logo/FullLogoPink.png"
                     alt="logo"
                   />
                 </Link>
