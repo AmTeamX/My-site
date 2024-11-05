@@ -1,4 +1,4 @@
 export const bioData = {
-  descOne: `I am an enthusiastic programmer with a passion for coding, which began during high school.`,
-  descTwo: `I continuously seek new challenges and opportunities to enhance my skills and grow professionally.`,
+  descOne: `I'm a student who loves programming and got started back in high school.`,
+  descTwo: `I'm excited to keep learning, take on challenges, and grow my skills.`,
 };
