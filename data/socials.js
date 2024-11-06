@@ -19,8 +19,8 @@ export const socialMediaData = [
   },
   {
     id: 3,
-    className: "fa-brands fa-linkedin-in",
-    href: "#",
+    className: "fa-brands fa-github",
+    href: "https://github.com/AmTeamX",
     color: "#E93B81",
   },
 ];
