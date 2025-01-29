@@ -1,13 +1,13 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
 import { clientLogos } from "@/data/clientLogos";
+import { useEffect, useState } from "react";
 
-import { Navigation, Pagination, Autoplay } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { items } from "@/data/jobFeatures";
 import { bioData } from "@/data/bioData";
+import { items } from "@/data/jobFeatures";
 import Image from "next/image";
+import { Autoplay, Navigation, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function AboutOne() {
   const [showSlider, setShowSlider] = useState(false);
@@ -57,7 +57,7 @@ export default function AboutOne() {
 
         <div className="section-wrapper bg-light-white-2 pt-45 pb-60 pl-60 pr-60">
           <div className="bostami-section-title-wrap text-center mb-50">
-            <h3 className="section-title">clinet</h3>
+            <h3 className="section-title">client</h3>
           </div>
 
           <div className="bostami-client-slider">
