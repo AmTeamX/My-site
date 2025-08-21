@@ -3,11 +3,10 @@ import PersonalInfo from "@/components/homes/personalInfo/PersonalInfo";
 
 import Contact from "@/components/homes/contact/Contact";
 
-import React from "react";
 
 import MenuTwo from "@/components/homes/menus/MenuTwo";
 export const metadata = {
-  title: "Contact | ThisIsTeam",
+  title: "Contact | PWTeam",
   description:
     "Get in touch",
 };

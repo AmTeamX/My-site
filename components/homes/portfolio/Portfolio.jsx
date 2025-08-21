@@ -1,12 +1,11 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { AnimatePresence } from "framer-motion";
 import { filterButtons, portfolioData } from "@/data/portfolioData";
-import React, { useState, useEffect } from "react";
-import Modal from "./Modal";
+import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import Modal from "./Modal";
 export default function Portfolio() {
   const [filteredItem, setFilteredItem] = useState([]);
   const [activeTab, setActiveTab] = useState("All");
@@ -119,7 +118,7 @@ export default function Portfolio() {
 
           <div className="footer-copyright text-center bg-light-white-2 pt-25 pb-25">
             <span>
-              © {new Date().getFullYear()} All Rights Reserved by ThisIsTeam.
+              © {new Date().getFullYear()} All Rights Reserved by PWTeam.
             </span>
           </div>
         </div>

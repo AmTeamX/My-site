@@ -14,7 +14,7 @@ export const socialMediaData = [
   {
     id: 2,
     className: "fa-brands fa-instagram",
-    href: "https://www.instagram.com/thisisteam_/",
+    href: "https://www.instagram.com/pwteam._/",
     color: "#E93B81",
   },
   {

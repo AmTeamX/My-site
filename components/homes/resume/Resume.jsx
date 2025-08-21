@@ -1,7 +1,5 @@
-import React from "react";
 import Education from "./Education";
 import Experience from "./Experience";
-import Skills from "./Skills";
 import Knowledges from "./Knowledges";
 
 export default function Resume() {
@@ -30,7 +28,7 @@ export default function Resume() {
 
         <div className="footer-copyright text-center pt-25 pb-25">
           <span>
-            © {new Date().getFullYear()} All Rights Reserved by ThisIsTeam.
+            © {new Date().getFullYear()} All Rights Reserved by PWTeam.
           </span>
         </div>
       </div>

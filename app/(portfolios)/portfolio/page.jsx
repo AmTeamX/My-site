@@ -4,9 +4,8 @@ import PersonalInfo from "@/components/homes/personalInfo/PersonalInfo";
 
 import Portfolio from "@/components/homes/portfolio/Portfolio";
 
-import React from "react";
 export const metadata = {
-  title: "Portfolio | ThisIsTeam",
+  title: "Portfolio | PWTeam",
   description:
     "Discover Botami,the most impressive portfolio template for work showcase, blog",
 };

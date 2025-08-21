@@ -1,14 +1,13 @@
+import AboutOne from "@/components/homes/about/AboutOne";
 import Header from "@/components/homes/headers/Header";
 import PersonalInfo from "@/components/homes/personalInfo/PersonalInfo";
-import AboutOne from "@/components/homes/about/AboutOne";
-import React from "react";
 
 import MenuTwo from "@/components/homes/menus/MenuTwo";
 
 export const metadata = {
-  title: "ThisIsTeam",
+  title: "PWTeam | Pannawit Krutnak",
   description:
-    "Hi, My name is team.",
+    "Welcome to my portfolio! I'm Pannawit Krutnak (Team), a passionate developer specializing in mobile and web applications. Explore my projects and experience.",
 };
 
 export default function Home1() {
