@@ -32,7 +32,7 @@ export const portfolioData = [
     previewLink: "",
     previewName: "N/A",
     desc: [
-       "This project, completed with my seniors at ICT, was a valuable team experience and provided significant learning opportunities."
+      "This project, completed with my seniors at ICT, was a valuable team experience and provided significant learning opportunities.",
     ],
   },
   {
@@ -50,9 +50,10 @@ export const portfolioData = [
     previewLink: "",
     previewName: "N/A",
     desc: [
-       "A student management system for the Faculty of ICT, developed in collaboration with members of the ICT Dev Club.",
+      "A student management system for the Faculty of ICT, developed in collaboration with members of the ICT Dev Club.",
     ],
-  },{
+  },
+  {
     id: 4,
     class: "isotop-item design mockup",
     bgClass: "bg-catkrill",
@@ -67,7 +68,27 @@ export const portfolioData = [
     previewLink: "https://www.tedxmahidolu.com/",
     previewName: "www.tedxmahidolu.com",
     desc: [
-       "The official website for TEDx Mahidol University, showcasing event details and updates.",
+      "The official website for TEDx Mahidol University, showcasing event details and updates.",
+    ],
+  },
+  {
+    id: 5,
+    class: "isotop-item design mockup",
+    bgClass: "bg-catkrill",
+    imgSrc: "/assets/img/work/hackathonKKU.png",
+    subtitle: "Hackathon Event",
+    title: "Hackathon KKU: Unlocking the Potential of AI Engineering",
+    target: "#portfolio-1",
+    category: ["Web Dev"],
+    project: "Hackathon",
+    languages: ["Python", "AI/ML"],
+    client: "KKU & MUICT & AIE",
+    previewLink:
+      "https://www.ict.mahidol.ac.th/news/hackathon-kku-unlocking-the-potential-of-ai-engineering/",
+    previewName:
+      "ict.mahidol.ac.th/news/hackathon-kku-unlocking-the-potential-of-ai-engineering",
+    desc: [
+      "Participated in the Hackathon at KKU, focusing on AI engineering solutions and collaborative development with students from multiple universities.",
     ],
   },
 ];
