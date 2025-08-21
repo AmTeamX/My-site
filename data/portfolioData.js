@@ -75,7 +75,7 @@ export const portfolioData = [
     id: 5,
     class: "isotop-item design mockup",
     bgClass: "bg-catkrill",
-    imgSrc: "/assets/img/work/hackathonKKU.png",
+    imgSrc: "/assets/img/work/hackathonKKU.jpg",
     subtitle: "Hackathon Event",
     title: "Hackathon KKU: Unlocking the Potential of AI Engineering",
     target: "#portfolio-1",
