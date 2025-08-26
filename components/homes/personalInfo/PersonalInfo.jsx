@@ -2,7 +2,6 @@ import { contactData } from "@/data/contactData";
 import { profileInfo } from "@/data/profileInfo";
 import { socialMediaData } from "@/data/socials";
 import Image from "next/image";
-import React from "react";
 
 export default function PersonalInfo() {
   return (
@@ -50,12 +49,38 @@ export default function PersonalInfo() {
             ))}
           </div>
 
-          <div className="bostami-parsonal-info-btn">
-            <a className="btn-1" href="/Pannawit_Krutnak_CV.pdf" download >
-              <span style={{ color: "#fff" }} className="icon">
-                <i className="fa-regular fa-download"></i>
+          <div className="bostami-parsonal-info-btn resume-btn-group">
+            <a
+              className="resume-btn"
+              href="/resume/Pannawit_Krutnak_CV.pdf"
+              download
+            >
+              <span className="icon">
+                <i className="fa-regular fa-file-pdf"></i>
               </span>
-              download cv
+              PDF
+            </a>
+            <a
+              className="resume-btn"
+              href="/resume/Pannawit_Krutnak_CV.md"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="icon">
+                <i className="fa-regular fa-file-lines"></i>
+              </span>
+              Markdown
+            </a>
+            <a
+              className="resume-btn"
+              href="/resume/Pannawit_Krutnak_CV.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="icon">
+                <i className="fa-regular fa-file-code"></i>
+              </span>
+              HTML
             </a>
           </div>
         </div>

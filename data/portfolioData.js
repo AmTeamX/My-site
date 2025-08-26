@@ -8,13 +8,13 @@ export const portfolioData = [
     title: "Kliniek Application",
     target: "#portfolio-1",
     category: ["Mobile Dev"],
-    project: "Mobile App",
+    project: "Mobile Application",
     languages: ["Flutter & Dart"],
     client: "N/A",
     previewLink: "",
     previewName: "N/A",
     desc: [
-      "This was my first large-scale project, featuring a doctor filtering system, queue management, and in-app chat functionality.",
+      "A large-scale mobile app featuring a doctor filtering system, queue management, and in-app chat functionality.",
     ],
   },
   {
@@ -26,13 +26,13 @@ export const portfolioData = [
     title: "MUICT Openhouse Register System",
     target: "#portfolio-1",
     category: ["Web Dev"],
-    project: "Website",
-    languages: ["Node.js", "Mongodb", "Line LIFF"],
+    project: "Web Application",
+    languages: ["Node.js", "MongoDB", "LINE LIFF"],
     client: "MUICT",
     previewLink: "",
     previewName: "N/A",
     desc: [
-      "This project, completed with my seniors at ICT, was a valuable team experience and provided significant learning opportunities.",
+      "A collaborative web project for MUICT Openhouse registration, providing valuable team experience and learning opportunities.",
     ],
   },
   {
@@ -44,13 +44,13 @@ export const portfolioData = [
     title: "ICT One Stop Services",
     target: "#portfolio-1",
     category: ["Mobile Dev"],
-    project: "Mobile App",
+    project: "Mobile Application",
     languages: ["Flutter & Dart"],
-    client: "MUICT Dev club",
+    client: "MUICT Dev Club",
     previewLink: "",
     previewName: "N/A",
     desc: [
-      "A student management system for the Faculty of ICT, developed in collaboration with members of the ICT Dev Club.",
+      "A student management system for the Faculty of ICT, developed in collaboration with ICT Dev Club members.",
     ],
   },
   {
@@ -62,13 +62,13 @@ export const portfolioData = [
     title: "TEDx Mahidol University Website",
     target: "#portfolio-1",
     category: ["Web Dev"],
-    project: "Website",
-    languages: ["Flutter&Dart"],
+    project: "Web Application",
+    languages: ["Flutter & Dart"],
     client: "TEDx Mahidol University",
     previewLink: "https://www.tedxmahidolu.com/",
     previewName: "www.tedxmahidolu.com",
     desc: [
-      "The official website for TEDx Mahidol University, showcasing event details and updates.",
+      "Official website for TEDx Mahidol University, showcasing event details and updates.",
     ],
   },
   {
@@ -76,19 +76,40 @@ export const portfolioData = [
     class: "isotop-item design mockup",
     bgClass: "bg-catkrill",
     imgSrc: "/assets/img/work/hackathonKKU.jpg",
-    subtitle: "Hackathon Event",
-    title: "Hackathon KKU: Unlocking the Potential of AI Engineering",
+    subtitle:
+      "1st Prize – Hackathon: Unlocking the Potential of AI Engineering, Khon Kaen University 2024",
+    title: "AI-Powered Bird Detection System",
     target: "#portfolio-1",
-    category: ["Web Dev"],
-    project: "Hackathon",
+    category: ["Web Dev", "AI/ML"],
+    project: "Hackathon Project",
     languages: ["Python", "AI/ML"],
-    client: "KKU & MUICT & AIE",
+    client: "KKU, MUICT, AIE",
     previewLink:
       "https://www.ict.mahidol.ac.th/news/hackathon-kku-unlocking-the-potential-of-ai-engineering/",
     previewName:
       "ict.mahidol.ac.th/news/hackathon-kku-unlocking-the-potential-of-ai-engineering",
     desc: [
-      "Participated in the Hackathon at KKU, focusing on AI engineering solutions and collaborative development with students from multiple universities.",
+      "Designed an AI system using cameras and laser automation to protect restricted areas.",
+      "Achieved reliable bird detection under dynamic environmental conditions.",
+    ],
+  },
+  {
+    id: 6,
+    class: "isotop-item design mockup",
+    bgClass: "bg-catkrill",
+    imgSrc: "/assets/img/work/nscaward.png",
+    subtitle: "Honorable Mention – 27th National Software Contest (NSC 2025)",
+    title: "BlinkDx – AI-Powered Blink Anomaly Detection",
+    target: "#portfolio-1",
+    category: ["Web Dev", "AI/ML"],
+    project: "AI Medical Diagnosis",
+    languages: ["Python", "TensorFlow", "Computer Vision"],
+    client: "NSC 2025",
+    previewLink: "",
+    previewName: "N/A",
+    desc: [
+      "Developed a deep learning system to detect blink irregularities for medical diagnosis with 95% accuracy.",
+      "Implemented computer vision models for real-time patient video analysis.",
     ],
   },
 ];
@@ -96,7 +117,6 @@ export const portfolioData = [
 export const filterButtons = [
   {
     id: 1,
-
     text: "All",
   },
   {
@@ -106,5 +126,9 @@ export const filterButtons = [
   {
     id: 3,
     text: "Web Dev",
+  },
+  {
+    id: 4,
+    text: "AI/ML",
   },
 ];
