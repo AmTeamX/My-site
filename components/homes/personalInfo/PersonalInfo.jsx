@@ -49,22 +49,17 @@ export default function PersonalInfo() {
             ))}
           </div>
           <div className="bostami-parsonal-info-btn">
-            <a className="btn-1" href="/resume/Pannawit_K_CV.html" download >
+            <a
+              className="btn-1"
+              href="/resume/Pannawit_K_CV.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <span style={{ color: "#fff" }} className="icon">
-                <i class="fa-solid fa-eye"></i>
+                <i className="fa-solid fa-eye"></i>
               </span>
-                 Preview CV
+              Resume
             </a>
-          </div>
-          <div className="bostami-parsonal-info-btn">
-            <a className="btn-1" href="/resume/Pannawit_K_CV.pdf" download >
-              <span style={{ color: "#fff" }} className="icon">
-                <i className="fa-regular fa-download"></i>
-              </span>
-                 Download CV
-            </a>
-
-            
           </div>
         </div>
       </div>
