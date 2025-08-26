@@ -48,41 +48,23 @@ export default function PersonalInfo() {
               </div>
             ))}
           </div>
+          <div className="bostami-parsonal-info-btn">
+            <a className="btn-1" href="/resume/Pannawit_K_CV.html" download >
+              <span style={{ color: "#fff" }} className="icon">
+                <i class="fa-solid fa-eye"></i>
+              </span>
+                 Preview CV
+            </a>
+          </div>
+          <div className="bostami-parsonal-info-btn">
+            <a className="btn-1" href="/resume/Pannawit_K_CV.pdf" download >
+              <span style={{ color: "#fff" }} className="icon">
+                <i className="fa-regular fa-download"></i>
+              </span>
+                 Download CV
+            </a>
 
-          <div className="bostami-parsonal-info-btn resume-btn-group">
-            <h5 style={{ marginBottom: "10px" }}>Download Resume</h5>
-            <a
-              className="resume-btn"
-              href="/resume/Pannawit_K_CV.pdf"
-              download
-            >
-              <span className="icon">
-                <i className="fa-regular fa-file-pdf"></i>
-              </span>
-              PDF
-            </a>
-            <a
-              className="resume-btn"
-              href="/resume/Pannawit_K_CV.md"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="icon">
-                <i className="fa-regular fa-file-lines"></i>
-              </span>
-              Markdown
-            </a>
-            <a
-              className="resume-btn"
-              href="/resume/Pannawit_K_CV.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="icon">
-                <i className="fa-regular fa-file-code"></i>
-              </span>
-              HTML
-            </a>
+            
           </div>
         </div>
       </div>
