@@ -55,10 +55,7 @@ export default function PersonalInfo() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span style={{ color: "#fff" }} className="icon">
-                <i className="fa-solid fa-eye"></i>
-              </span>
-              Resume
+              See Resume
             </a>
           </div>
         </div>
