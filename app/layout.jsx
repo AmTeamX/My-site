@@ -1,5 +1,3 @@
-
-
 import Head from 'next/head';
 import { ToastContainer } from 'react-toastify';
 import '../public/main.scss';
@@ -8,25 +6,25 @@ import '../public/main.scss';
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="th">
       <Head>
-        <title>PWTeam | Pannawit Krutnak | Professional Portfolio & Blog</title>
-        <meta name="description" content="Welcome to PWTeam and Pannawit Krutnak's site, a professional portfolio and blog showcasing projects, experience, and contact information for PWTeam and Pannawit Krutnak." />
-        <meta name="keywords" content="pwteam, pannawit krutnak, portfolio, blog, resume, contact, web developer, designer, projects, AmTeamX" />
-        <meta name="author" content="AmTeamX, PWTeam, Pannawit Krutnak" />
+        <title>PWTeam | Pannawit Krutnak (ทีม) | ปัณณวิชญ์ ครุฑนาค | Professional Portfolio & Blog</title>
+        <meta name="description" content="Welcome to PWTeam and Pannawit Krutnak (ทีม, Team), ปัณณวิชญ์ ครุฑนาค's site. Explore a professional portfolio and blog showcasing web, mobile, AI/ML projects, experience, resume, and contact information for PWTeam, Pannawit Krutnak, and Team." />
+        <meta name="keywords" content="pwteam, pannawit krutnak, ปัณณวิชญ์ ครุฑนาค, team, ทีม, portfolio, blog, resume, contact, web developer, designer, projects, AmTeamX, ai, ml, mobile app, hackathon, nsc, tedx, openhouse, ict, muict, thailand, thai developer" />
+        <meta name="author" content="AmTeamX, PWTeam, Pannawit Krutnak, ปัณณวิชญ์ ครุฑนาค, Team, ทีม" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="UTF-8" />
         {/* Open Graph tags */}
-        <meta property="og:title" content="PWTeam | Pannawit Krutnak | Professional Portfolio & Blog" />
-        <meta property="og:description" content="Showcasing projects, experience, and contact information for PWTeam and Pannawit Krutnak." />
+        <meta property="og:title" content="PWTeam | Pannawit Krutnak (Team, ทีม) | ปัณณวิชญ์ ครุฑนาค | Professional Portfolio & Blog" />
+        <meta property="og:description" content="Showcasing web, mobile, AI/ML projects, experience, resume, and contact information for PWTeam, Pannawit Krutnak (Team, ทีม), ปัณณวิชญ์ ครุฑนาค." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://pwteam.site/" />
-        <meta property="og:image" content="/public/assets/img/parsonal-info/parson-img-1.png" />
+        <meta property="og:image" content="/assets/img/parsonal-info/parson-img-1.png" />
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="PWTeam | Pannawit Krutnak | Professional Portfolio & Blog" />
-        <meta name="twitter:description" content="Showcasing projects, experience, and contact information for PWTeam and Pannawit Krutnak." />
-        <meta name="twitter:image" content="/public/assets/img/parsonal-info/parson-img-1.png" />
+        <meta name="twitter:title" content="PWTeam | Pannawit Krutnak (Team, ทีม) | ปัณณวิชญ์ ครุฑนาค | Professional Portfolio & Blog" />
+        <meta name="twitter:description" content="Showcasing web, mobile, AI/ML projects, experience, resume, and contact information for PWTeam, Pannawit Krutnak (Team, ทีม), ปัณณวิชญ์ ครุฑนาค." />
+        <meta name="twitter:image" content="/assets/img/parsonal-info/parson-img-1.png" />
         {/* Canonical URL */}
         <link rel="canonical" href="https://pwteam.site/" />
         <link rel="icon" href="/favicon.ico" />
@@ -39,18 +37,21 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "Person",
               "name": "Pannawit Krutnak",
-              "alternateName": "PWTeam",
+              "alternateName": ["PWTeam", "Team", "ทีม", "ปัณณวิชญ์ ครุฑนาค"],
+              "additionalName": "ทีม",
               "url": "https://pwteam.site/",
-              "image": "https://pwteam.site/public/assets/img/parsonal-info/parson-img-1.png",
+              "image": "https://pwteam.site/assets/img/parsonal-info/parson-img-1.png",
               "sameAs": [
                 "https://www.linkedin.com/in/pannawitkrutnak/",
                 "https://github.com/pwteam"
               ],
-              "jobTitle": "Web Developer, Designer",
+              "jobTitle": "Web Developer, Designer, AI/ML Engineer",
               "worksFor": {
                 "@type": "Organization",
                 "name": "PWTeam"
-              }
+              },
+              "nationality": "Thai",
+              "description": "ปัณณวิชญ์ ครุฑนาค (Pannawit Krutnak, Team, ทีม) is a Thai developer specializing in web, mobile, and AI/ML projects."
             }
           `}
         </script>

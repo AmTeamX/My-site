@@ -50,9 +50,10 @@ export default function PersonalInfo() {
           </div>
 
           <div className="bostami-parsonal-info-btn resume-btn-group">
+            <h5 style={{ marginBottom: "10px" }}>Download Resume</h5>
             <a
               className="resume-btn"
-              href="/resume/Pannawit_Krutnak_CV.pdf"
+              href="/resume/Pannawit_K_CV.pdf"
               download
             >
               <span className="icon">
@@ -62,7 +63,7 @@ export default function PersonalInfo() {
             </a>
             <a
               className="resume-btn"
-              href="/resume/Pannawit_Krutnak_CV.md"
+              href="/resume/Pannawit_K_CV.md"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -73,7 +74,7 @@ export default function PersonalInfo() {
             </a>
             <a
               className="resume-btn"
-              href="/resume/Pannawit_Krutnak_CV.html"
+              href="/resume/Pannawit_K_CV.html"
               target="_blank"
               rel="noopener noreferrer"
             >
