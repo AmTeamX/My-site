@@ -1,11 +1,7 @@
-
-
-
 export const profileInfo = {
-   name:'Pannawit Krutnak',
-   title:'Front-end Developer',
-   imageSrcOne:'/assets/img/parsonal-info/parson-img-1.png',
-   imageSrcTwo:'/assets/img/parsonal-info/parson-img-3.png',
-   imageSrcThree:'/assets/img/parsonal-info/parson-img-2.png',
-
-}
+  name: "Pannawit Krutnak",
+  title: "Full-Stack Developer",
+  imageSrcOne: "/assets/img/parsonal-info/parson-img-1.png",
+  imageSrcTwo: "/assets/img/parsonal-info/parson-img-3.png",
+  imageSrcThree: "/assets/img/parsonal-info/parson-img-2.png",
+};
