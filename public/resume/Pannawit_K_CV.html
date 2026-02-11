@@ -1,372 +1,497 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pannawit Krutnak - Resume (English)</title>
-    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        /* --- Global Styles --- */
+      /* --- Global Styles --- */
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+        line-height: 1.5;
+        margin: 0;
+        padding: 20px 0;
+        font-size: 14px;
+      }
+
+      .resume-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+      }
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        margin: 0;
+        font-weight: 700;
+      }
+
+      ul {
+        margin: 5px 0 0 0;
+        padding-left: 18px;
+      }
+
+      li {
+        margin-bottom: 3px;
+      }
+
+      /* --- Header Section --- */
+      header {
+        text-align: center;
+        border-bottom: 2px solid #333;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+      }
+
+      header h1 {
+        font-size: 2.2em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #000;
+        margin-bottom: 5px;
+      }
+
+      header .job-title {
+        font-size: 1.1em;
+        font-weight: 600;
+        color: #555;
+        margin-bottom: 8px;
+      }
+
+      header .contact-info {
+        font-size: 0.95em;
+        color: #444;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      header .contact-info span {
+        color: #ccc;
+      }
+
+      /* --- Section Styles --- */
+      section {
+        margin-bottom: 12px;
+      }
+
+      .section-title {
+        font-size: 1.1em;
+        text-transform: uppercase;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 3px;
+        margin-bottom: 10px;
+        color: #007bff;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+      }
+
+      /* --- Summary --- */
+      .summary p {
+        margin: 0;
+        text-align: justify;
+      }
+
+      /* --- Education --- */
+      .education-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+      }
+
+      .education-details {
+        font-style: italic;
+        color: #555;
+      }
+
+      /* --- Skills --- */
+      .skills-grid {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 5px 15px;
+      }
+
+      .skill-category {
+        font-weight: 700;
+        color: #444;
+        white-space: nowrap;
+      }
+
+      .skill-list {
+        color: #555;
+      }
+
+      /* --- Experience & Projects --- */
+      .entry-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 2px;
+      }
+
+      .entry-title {
+        font-size: 1.05em;
+        font-weight: 700;
+        color: #222;
+      }
+
+      .entry-subtitle {
+        font-weight: 600;
+        color: #444;
+      }
+
+      .entry-date,
+      .entry-location {
+        font-size: 0.9em;
+        color: #666;
+        font-style: italic;
+        white-space: nowrap;
+      }
+
+      .entry-content {
+        color: #444;
+      }
+
+      /* --- Print Optimization --- */
+      @media print {
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-            line-height: 1.5;
-            margin: 0;
-            padding: 20px 0;
-            font-size: 14px;
+          background: none;
+          padding: 0;
         }
-
         .resume-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px;
-            background-color: #ffffff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 4px;
-        }
-
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        h1, h2, h3, h4 {
-            margin: 0;
-            font-weight: 700;
-        }
-
-        ul {
-            margin: 5px 0 0 0;
-            padding-left: 18px;
-        }
-
-        li {
-            margin-bottom: 3px;
-        }
-
-        /* --- Header Section --- */
-        header {
-            text-align: center;
-            border-bottom: 2px solid #333;
-            padding-bottom: 15px;
-            margin-bottom: 15px;
-        }
-
-        header h1 {
-            font-size: 2.2em;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #000;
-            margin-bottom: 5px;
-        }
-
-        header .job-title {
-            font-size: 1.1em;
-            font-weight: 600;
-            color: #555;
-            margin-bottom: 8px;
-        }
-
-        header .contact-info {
-            font-size: 0.95em;
-            color: #444;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        header .contact-info span {
-            color: #ccc;
-        }
-
-        /* --- Section Styles --- */
-        section {
-            margin-bottom: 12px;
-        }
-
-        .section-title {
-            font-size: 1.1em;
-            text-transform: uppercase;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 3px;
-            margin-bottom: 10px;
-            color: #007bff;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-        }
-
-        /* --- Summary --- */
-        .summary p {
-            margin: 0;
-            text-align: justify;
-        }
-
-        /* --- Education --- */
-        .education-item {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 5px;
-        }
-        
-        .education-details {
-            font-style: italic;
-            color: #555;
-        }
-
-        /* --- Skills --- */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: auto 1fr;
-            gap: 5px 15px;
-        }
-
-        .skill-category {
-            font-weight: 700;
-            color: #444;
-            white-space: nowrap;
-        }
-
-        .skill-list {
-            color: #555;
-        }
-
-        /* --- Experience & Projects --- */
-        .entry-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 2px;
-        }
-
-        .entry-title {
-            font-size: 1.05em;
-            font-weight: 700;
-            color: #222;
-        }
-
-        .entry-subtitle {
-            font-weight: 600;
-            color: #444;
-        }
-
-        .entry-date, .entry-location {
-            font-size: 0.9em;
-            color: #666;
-            font-style: italic;
-            white-space: nowrap;
-        }
-
-        .entry-content {
-            color: #444;
-        }
-
-        /* --- Print Optimization --- */
-        @media print {
-            body {
-                background: none;
-                padding: 0;
-            }
-            .resume-container {
-                box-shadow: none;
-                padding: 0;
-                width: 100%;
-                max-width: none;
-            }
-            .download-btn {
-                display: none;
-            }
-            a {
-                text-decoration: none;
-                color: #000;
-            }
-        }
-
-        /* Helper for download button visibility in web view */
-        .download-container {
-            text-align: center;
-            margin-bottom: 20px;
+          box-shadow: none;
+          padding: 0;
+          width: 100%;
+          max-width: none;
         }
         .download-btn {
-            display: inline-block;
-            padding: 8px 16px;
-            background-color: #007bff;
-            color: white;
-            border-radius: 4px;
-            font-size: 0.9em;
-            margin-bottom: 10px;
+          display: none;
         }
-        .download-btn:hover {
-            background-color: #0056b3;
-            text-decoration: none;
-            color: white;
+        a {
+          text-decoration: none;
+          color: #000;
         }
-    </style>
-</head>
-<body>
+      }
 
+      /* Helper for download button visibility in web view */
+      .download-container {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .download-btn {
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: #007bff;
+        color: white;
+        border-radius: 4px;
+        font-size: 0.9em;
+        margin-bottom: 10px;
+      }
+      .download-btn:hover {
+        background-color: #0056b3;
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
     <div class="download-container">
-        <a href="Pannawit_K_CV.pdf" class="download-btn" download>📄 Download PDF Version</a>
+      <a href="Pannawit_K_CV.pdf" class="download-btn" download
+        >📄 Download PDF Version</a
+      >
     </div>
 
     <div class="resume-container">
-        
-        <!-- Header -->
-        <header>
-            <h1>Pannawit Krutnak</h1>
-            <div class="job-title">Full-Stack Developer & Mobile Engineer</div>
-            <div class="contact-info">
-                <a href="mailto:amteamxmail@gmail.com">amteamxmail@gmail.com</a>
-                <span>|</span>
-                <a href="https://www.pwteam.site" target="_blank">www.pwteam.site</a>
-                <span>|</span>
-                <a href="https://github.com/AmTeamX" target="_blank">github.com/AmTeamX</a>
-                <span>|</span>
-                <a href="https://www.linkedin.com/in/pannawit-krutnak-9728562a8/" target="_blank">LinkedIn</a>
+      <!-- Header -->
+      <header>
+        <h1>Pannawit Krutnak</h1>
+        <div class="job-title">Full-Stack Developer & Mobile Engineer</div>
+        <div class="contact-info">
+          <a href="mailto:amteamxmail@gmail.com">amteamxmail@gmail.com</a>
+          <span>|</span>
+          <a href="https://www.pwteam.site" target="_blank">www.pwteam.site</a>
+          <span>|</span>
+          <a href="https://github.com/AmTeamX" target="_blank"
+            >github.com/AmTeamX</a
+          >
+          <span>|</span>
+          <a
+            href="https://www.linkedin.com/in/pannawit-krutnak-9728562a8/"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </div>
+      </header>
+
+      <!-- Summary -->
+      <section class="summary">
+        <div class="section-title">Professional Summary</div>
+        <p>
+          Innovative Software Engineer specializing in mobile and web
+          development, AI/ML research, and
+          <strong>Scalable system design</strong>. Experienced in deploying
+          production-ready applications to the
+          <strong>Google Play Store</strong> and
+          <strong>Apple App Store</strong>. Skilled in Flutter, Next.js, Python,
+          and TensorFlow, with award-winning projects in national competitions.
+          Passionate about building solutions that solve real-world problems
+          through <strong>Clean Architecture</strong> and efficient code.
+        </p>
+      </section>
+
+      <!-- Education -->
+      <section class="education">
+        <div class="section-title">Education</div>
+        <div class="entry-header">
+          <div class="entry-title">Mahidol University, Faculty of ICT</div>
+          <div class="entry-date">2023 - Present</div>
+        </div>
+        <div class="entry-subtitle">
+          Bachelor of Science in Information and Communication Technology
+        </div>
+        <div class="entry-content">
+          Relevant Coursework: Data Structures & Algorithms, Software
+          Engineering, AI & Machine Learning, Web & Mobile Development
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="skills">
+        <div class="section-title">Technical Skills</div>
+        <div class="skills-grid">
+          <div class="skill-category">Languages:</div>
+          <div class="skill-list">
+            Python, C/C++, Golang, JavaScript, TypeScript, Dart, PHP, SQL
+          </div>
+
+          <div class="skill-category">Frontend:</div>
+          <div class="skill-list">
+            Flutter, Next.js, React, HTML/CSS, Tailwind CSS
+          </div>
+
+          <div class="skill-category">Backend:</div>
+          <div class="skill-list">
+            Node.js, Express.js, PostgreSQL, MongoDB, Redis, Firebase, RESTful
+            APIs
+          </div>
+
+          <div class="skill-category">Mobile Deployment:</div>
+          <div class="skill-list">
+            Google Play Console, Apple App Store, App Signing, CI/CD for Mobile
+          </div>
+
+          <div class="skill-category">AI/ML:</div>
+          <div class="skill-list">
+            TensorFlow, PyTorch, Scikit-Learn, Pandas, NumPy, Computer Vision
+          </div>
+
+          <div class="skill-category">Tools/DevOps:</div>
+          <div class="skill-list">Git, Docker, Linux, Agile/Scrum, UML</div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="experience">
+        <div class="section-title">Experience</div>
+
+        <div class="job-entry">
+          <div class="entry-header">
+            <div class="entry-title">Tech Horizon (Japan-based Fintech)</div>
+            <div class="entry-date">Jan 2026 - Present</div>
+          </div>
+          <div class="entry-subtitle">Backend Developer Intern / Part-time</div>
+          <ul>
+            <li>
+              <strong>Digital Wallet & BNPL Development:</strong> Engineering a
+              Japanese e-wallet ecosystem using <strong>PHP</strong>,
+              integrating "Buy Now, Pay Later" (BNPL) functionality to allow
+              users to make deferred payments, similar to Shopee Pay Later.
+            </li>
+            <li>
+              <strong>Payment Gateway Architecture:</strong> Implementing and
+              managing integrations with major Japanese Payment Gateways to
+              support credit cards, bank transfers, convenience store, and
+              online payments.
+            </li>
+          </ul>
+        </div>
+
+        <div class="job-entry" style="margin-top: 10px">
+          <div class="entry-header">
+            <div class="entry-title">MUICT DEV-CLUB</div>
+            <div class="entry-date">Sep 2024 - Present</div>
+          </div>
+          <div class="entry-subtitle">
+            Mobile Frontend Developer & Agile Scrum Leader
+          </div>
+          <ul>
+            <li>
+              Led the development team as an
+              <strong>Agile Scrum Leader</strong>, conducting
+              <strong>Sprint Planning</strong> to ensure
+              <strong>On-time Delivery</strong> of projects and improving
+              iterative processes.
+            </li>
+            <li>
+              Designed and developed faculty mobile applications using
+              <strong>Flutter</strong> and <strong>Clean Architecture</strong>,
+              enhancing code maintainability.
+            </li>
+          </ul>
+        </div>
+
+        <div class="job-entry" style="margin-top: 10px">
+          <div class="entry-header">
+            <div class="entry-title">Biomedical Informatics Research Lab</div>
+            <div class="entry-date">Aug 2024 - Present</div>
+          </div>
+          <div class="entry-subtitle">Junior Research Assistant</div>
+          <ul>
+            <li>
+              Engineered <strong>End-to-end AI pipelines</strong> using
+              <strong>TensorFlow</strong> and <strong>PyTorch</strong> to
+              process <strong>Large datasets</strong>, ensuring high code
+              standards and <strong>Reproducible Research</strong>.
+            </li>
+            <li>
+              Designed a web platform for deploying AI solutions, enabling
+              researchers to interact with models via
+              <strong>RESTful APIs</strong>.
+            </li>
+          </ul>
+        </div>
+
+        <div class="job-entry" style="margin-top: 10px">
+          <div class="entry-header">
+            <div class="entry-title">CourseSquare</div>
+            <div class="entry-date">2024</div>
+          </div>
+          <div class="entry-subtitle">Software Engineering Intern</div>
+          <ul>
+            <li>
+              Collaborated in an <strong>Agile</strong> environment to maintain
+              and enhance the educational platform's web applications.
+            </li>
+            <li>
+              Identified and resolved critical bugs, directly contributing to
+              increased <strong>Platform Stability</strong> and improved user
+              satisfaction.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Projects & Awards -->
+      <section class="projects">
+        <div class="section-title">Projects & Awards</div>
+
+        <div class="project-entry">
+          <div class="entry-header">
+            <div class="entry-title">BONDUP - Community & Activity App</div>
+            <div class="entry-date">Lead Mobile Developer (Flutter)</div>
+          </div>
+          <ul>
+            <li>
+              Developed a <strong>User Interaction-focused</strong> application
+              for <strong>Real-time activity management</strong> using
+              <strong>Flutter</strong> and <strong>Clean Architecture</strong>.
+            </li>
+            <li>
+              Managed <strong>State Management</strong> and API integration to
+              ensure seamless real-time data updates and user engagement.
+            </li>
+            <li>
+              Independently handled the entire
+              <strong>Deployment process</strong> on
+              <strong>Google Play Console</strong> and
+              <strong>Apple App Store</strong>, ensuring the app is
+              production-ready.
+            </li>
+          </ul>
+        </div>
+
+        <div class="project-entry" style="margin-top: 8px">
+          <div class="entry-header">
+            <div class="entry-title">
+              BlinkDx – AI-Powered Blink Anomaly Detection
             </div>
-        </header>
+            <div class="entry-date">Honorable Mention – NSC 2025</div>
+          </div>
+          <ul>
+            <li>
+              Developed a deep learning system achieving
+              <strong>95% accuracy</strong> in detecting blink irregularities
+              for medical diagnosis.
+            </li>
+            <li>
+              Utilized computer vision models for real-time patient video
+              analysis.
+            </li>
+          </ul>
+        </div>
 
-        <!-- Summary -->
-        <section class="summary">
-            <div class="section-title">Professional Summary</div>
-            <p>
-                Innovative Software Engineer specializing in mobile and web development, AI/ML research, and <strong>Scalable system design</strong>. Experienced in deploying production-ready applications to the <strong>Google Play Store</strong> and <strong>Apple App Store</strong>. Skilled in Flutter, Next.js, Python, and TensorFlow, with award-winning projects in national competitions. Passionate about building solutions that solve real-world problems through <strong>Clean Architecture</strong> and efficient code.
-            </p>
-        </section>
-
-        <!-- Education -->
-        <section class="education">
-            <div class="section-title">Education</div>
-            <div class="entry-header">
-                <div class="entry-title">Mahidol University, Faculty of ICT</div>
-                <div class="entry-date">2023 - Present</div>
+        <div class="project-entry" style="margin-top: 8px">
+          <div class="entry-header">
+            <div class="entry-title">
+              AI System for Restricted Area Protection
             </div>
-            <div class="entry-subtitle">Bachelor of Science in Information and Communication Technology</div>
-            <div class="entry-content">
-                Relevant Coursework: Data Structures & Algorithms, Software Engineering, AI & Machine Learning, Web & Mobile Development
-            </div>
-        </section>
+            <div class="entry-date">1st Prize – AI Hackathon 2024</div>
+          </div>
+          <ul>
+            <li>
+              Designed a complex surveillance system for
+              <strong>Bird detection</strong> capable of operating effectively
+              under <strong>Dynamic environmental</strong> conditions.
+            </li>
+            <li>
+              Integrated camera and laser automation for precise area
+              protection.
+            </li>
+          </ul>
+        </div>
 
-        <!-- Skills -->
-        <section class="skills">
-            <div class="section-title">Technical Skills</div>
-            <div class="skills-grid">
-                <div class="skill-category">Languages:</div>
-                <div class="skill-list">Python, C/C++, Golang, JavaScript, TypeScript, Dart, SQL</div>
-                
-                <div class="skill-category">Frontend:</div>
-                <div class="skill-list">Flutter, Next.js, React, HTML/CSS, Tailwind CSS</div>
-                
-                <div class="skill-category">Backend:</div>
-                <div class="skill-list">Node.js, Express.js, PostgreSQL, MongoDB, Redis, Firebase, RESTful APIs</div>
-                
-                <div class="skill-category">Mobile Deployment:</div>
-                <div class="skill-list">Google Play Console, Apple App Store, App Signing, CI/CD for Mobile</div>
-                
-                <div class="skill-category">AI/ML:</div>
-                <div class="skill-list">TensorFlow, PyTorch, Scikit-Learn, Pandas, NumPy, Computer Vision</div>
-                
-                <div class="skill-category">Tools/DevOps:</div>
-                <div class="skill-list">Git, Docker, Linux, Agile/Scrum, UML</div>
-            </div>
-        </section>
-
-        <!-- Experience -->
-        <section class="experience">
-            <div class="section-title">Experience</div>
-
-            <div class="job-entry">
-                <div class="entry-header">
-                    <div class="entry-title">MUICT DEV-CLUB</div>
-                    <div class="entry-date">Sep 2024 - Present</div>
-                </div>
-                <div class="entry-subtitle">Mobile Frontend Developer & Agile Scrum Leader</div>
-                <ul>
-                    <li>Led the development team as an <strong>Agile Scrum Leader</strong>, conducting <strong>Sprint Planning</strong> to ensure <strong>On-time Delivery</strong> of projects and improving iterative processes.</li>
-                    <li>Designed and developed faculty mobile applications using <strong>Flutter</strong> and <strong>Clean Architecture</strong>, enhancing code maintainability.</li>
-                </ul>
-            </div>
-
-            <div class="job-entry" style="margin-top: 10px;">
-                <div class="entry-header">
-                    <div class="entry-title">Biomedical Informatics Research Lab</div>
-                    <div class="entry-date">Aug 2024 - Present</div>
-                </div>
-                <div class="entry-subtitle">Junior Research Assistant</div>
-                <ul>
-                    <li>Engineered <strong>End-to-end AI pipelines</strong> using <strong>TensorFlow</strong> and <strong>PyTorch</strong> to process <strong>Large datasets</strong>, ensuring high code standards and <strong>Reproducible Research</strong>.</li>
-                    <li>Designed a web platform for deploying AI solutions, enabling researchers to interact with models via <strong>RESTful APIs</strong>.</li>
-                </ul>
-            </div>
-
-            <div class="job-entry" style="margin-top: 10px;">
-                <div class="entry-header">
-                    <div class="entry-title">CourseSquare</div>
-                    <div class="entry-date">2024</div>
-                </div>
-                <div class="entry-subtitle">Software Engineering Intern</div>
-                <ul>
-                    <li>Collaborated in an <strong>Agile</strong> environment to maintain and enhance the educational platform's web applications.</li>
-                    <li>Identified and resolved critical bugs, directly contributing to increased <strong>Platform Stability</strong> and improved user satisfaction.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Projects & Awards -->
-        <section class="projects">
-            <div class="section-title">Projects & Awards</div>
-
-            <div class="project-entry">
-                <div class="entry-header">
-                    <div class="entry-title">BONDUP - Community & Activity App</div>
-                    <div class="entry-date">Lead Mobile Developer (Flutter) </div>
-                </div>
-                <ul>
-                    <li>Developed a <strong>User Interaction-focused</strong> application for <strong>Real-time activity management</strong> using <strong>Flutter</strong> and <strong>Clean Architecture</strong>.</li>
-                    <li>Managed <strong>State Management</strong> and API integration to ensure seamless real-time data updates and user engagement.</li>
-                    <li>Independently handled the entire <strong>Deployment process</strong> on <strong>Google Play Console</strong> and <strong>Apple App Store</strong>, ensuring the app is production-ready.</li>
-                </ul>
-            </div>
-
-            <div class="project-entry" style="margin-top: 8px;">
-                <div class="entry-header">
-                    <div class="entry-title">BlinkDx – AI-Powered Blink Anomaly Detection</div>
-                    <div class="entry-date">Honorable Mention – NSC 2025</div>
-                </div>
-                <ul>
-                    <li>Developed a deep learning system achieving <strong>95% accuracy</strong> in detecting blink irregularities for medical diagnosis.</li>
-                    <li>Utilized computer vision models for real-time patient video analysis.</li>
-                </ul>
-            </div>
-
-            <div class="project-entry" style="margin-top: 8px;">
-                <div class="entry-header">
-                    <div class="entry-title">AI System for Restricted Area Protection</div>
-                    <div class="entry-date">1st Prize – AI Hackathon 2024</div>
-                </div>
-                <ul>
-                    <li>Designed a complex surveillance system for <strong>Bird detection</strong> capable of operating effectively under <strong>Dynamic environmental</strong> conditions.</li>
-                    <li>Integrated camera and laser automation for precise area protection.</li>
-                </ul>
-            </div>
-
-            <div class="project-entry" style="margin-top: 8px;">
-                <div class="entry-header">
-                    <div class="entry-title">MUICT Open House Registration System</div>
-                    <div class="entry-date">2024</div>
-                </div>
-                <ul>
-                    <li>Built a robust registration platform using <strong>Next.js</strong> and <strong>Express.js</strong>, successfully handling <strong>200+ participants</strong> concurrently.</li>
-                    <li>Streamlined data collection workflows for faculty events using efficient database design.</li>
-                </ul>
-            </div>
-        </section>
-
+        <div class="project-entry" style="margin-top: 8px">
+          <div class="entry-header">
+            <div class="entry-title">MUICT Open House Registration System</div>
+            <div class="entry-date">2024</div>
+          </div>
+          <ul>
+            <li>
+              Built a robust registration platform using
+              <strong>Next.js</strong> and <strong>Express.js</strong>,
+              successfully handling
+              <strong>200+ participants</strong> concurrently.
+            </li>
+            <li>
+              Streamlined data collection workflows for faculty events using
+              efficient database design.
+            </li>
+          </ul>
+        </div>
+      </section>
     </div>
-</body>
+  </body>
 </html>
