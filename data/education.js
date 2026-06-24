@@ -1,10 +1,11 @@
 export const education = [
   {
     id: 1,
-    bgClass: "bg-prink",
-    session: "2021-2023",
-    cardTitle: "Bachelor of ICT",
-    cardSubtitleSecondary: "Mahidol University",
-    locatopn: "Thailand",
+    bgClass: "bg-catkrill",
+    session: "2023 - Present",
+    cardTitle: "Mahidol University, Faculty of ICT",
+    cardSubtitleSecondary: "BSc in Information and Communication Technology",
+    locatopn:
+      "Relevant Coursework: Data Structures & Algorithms, Software Engineering, AI & Machine Learning, Web & Mobile Development",
   },
 ];

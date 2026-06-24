@@ -2,9 +2,9 @@ export const items = [
   {
     id: 1,
     icon: "/assets/img/app-development.svg",
-    title: "mobile Developer",
+    title: "Mobile Developer",
     description:
-      "Develop applications using Flutter and Dart.",
+      "Build cross-platform applications with Flutter and Dart. Deploy to Google Play and Apple App Store.",
     bg: "bg-catkrill",
   },
   {
@@ -12,74 +12,23 @@ export const items = [
     icon: "/assets/img/webdev.svg",
     title: "Web Developer",
     description:
-      "Create websites with React.js and Next.js.",
+      "Create full-stack web applications with Next.js, React, Express.js, and modern web technologies.",
     bg: "bg-prink",
   },
   {
     id: 3,
-    icon: "/assets/img/teach.svg",
-    title: "Programming teacher",
-    description:
-      "Instruct students at BSD Education in the fundamentals of HTML, CSS, JavaScript, Python, and AI/VR basics.",
-    bg: "bg-prink",
-  },
-  {
-    id: 4,
     icon: "/assets/img/ai.svg",
-    title: "AI Engineer",
+    title: "AI & Machine Learning",
     description:
-      "Embark on a journey to develop and implement AI solutions.",
-    bg: "bg-catkrill",
-  },
-
-];
-export const itemsTwo = [
-  {
-    id: 1,
-    icon: "/assets/img/design.svg",
-    title: "Ui/Ux Design",
-    description:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.",
-    bg: "bg-prink",
-  },
-  {
-    id: 2,
-    icon: "/assets/img/app-development.svg",
-    title: "App Development",
-    description:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.",
-    bg: "bg-catkrill",
-  },
-  {
-    id: 3,
-    icon: "/assets/img/photograph.svg",
-    title: "Photography",
-    description:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.",
+      "Develop AI solutions with TensorFlow and PyTorch. Computer vision, deep learning, and data pipelines.",
     bg: "bg-prink",
   },
   {
     id: 4,
-    icon: "/assets/img/webdev.svg",
-    title: "Web Development",
-    description:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.",
-    bg: "bg-catkrill",
-  },
-  {
-    id: 5,
     icon: "/assets/img/management.svg",
-    title: "Management",
+    title: "Solution Architecture",
     description:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.",
-    bg: "bg-prink",
-  },
-  {
-    id: 6,
-    icon: "/assets/img/webdev.svg",
-    title: "Web Development",
-    description:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.",
+      "Analyze business requirements and design practical, scalable systems. Build rapid PoCs with Next.js and Golang.",
     bg: "bg-catkrill",
   },
 ];

@@ -1,23 +1,39 @@
-export const awards = [
+export const projects = [
   {
     id: 1,
-    bgClass: "bg-catkrill",
-    year: "2015-2017",
-    role: "Graphic Designer",
-    text: "Web Graphy, Los Angeles, CA",
+    title: "BONDUP — Community & Activity App",
+    role: "Lead Mobile Developer (Flutter)",
+    details: [
+      "Developed a real-time activity management app using Flutter and Clean Architecture.",
+      "Managed state management and API integration for seamless real-time data updates.",
+      "Handled deployment on Google Play Console and Apple App Store.",
+    ],
   },
   {
     id: 2,
-    bgClass: "bg-prink",
-    year: "2014 - 2015",
-    role: "Jr. Web Developer",
-    text: "Creative Gigs.",
+    title: "BlinkDx — AI-Powered Blink Anomaly Detection",
+    role: "Honorable Mention — NSC 2025",
+    details: [
+      "Developed a deep learning system achieving 95% accuracy in detecting blink irregularities for medical diagnosis.",
+      "Utilized computer vision models for real-time patient video analysis.",
+    ],
   },
   {
     id: 3,
-    bgClass: "bg-catkrill",
-    year: "2015-2017",
-    role: "Best Freelancer",
-    text: "Fiver & Upwork Level 2 & Top Rated.",
+    title: "AI System for Restricted Area Protection",
+    role: "1st Prize — AI Hackathon 2024",
+    details: [
+      "Designed a surveillance system for bird detection operating under dynamic environmental conditions.",
+      "Integrated camera and laser automation for precise area protection.",
+    ],
+  },
+  {
+    id: 4,
+    title: "MUICT Open House Registration System",
+    role: "2024",
+    details: [
+      "Built a registration platform using Next.js and Express.js, handling 200+ participants concurrently.",
+      "Streamlined data collection workflows for faculty events using efficient database design.",
+    ],
   },
 ];
