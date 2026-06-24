@@ -1,6 +1,6 @@
 # PANNAWIT KRUTNAK
 
-[www.pwteam.site](https://www.pwteam.site)  
+[www.profile.teampk.site](https://www.profile.teampk.site)  
 amteamxmail@gmail.com
 
 ---

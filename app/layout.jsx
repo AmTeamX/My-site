@@ -15,7 +15,7 @@ const robotoSlab = Roboto_Slab({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://pwteam.site"),
+  metadataBase: new URL("https://profile.teampk.site"),
   title: "PWTeam | Pannawit Krutnak",
   description:
     "Pannawit Krutnak (Team) — Full-Stack Developer. Web, Mobile, AI/ML projects. Portfolio, resume, and contact.",
@@ -23,10 +23,10 @@ export const metadata = {
     title: "PWTeam | Pannawit Krutnak",
     description:
       "Full-Stack Developer portfolio showcasing web, mobile, and AI/ML projects.",
-    url: "https://pwteam.site/",
+    url: "https://profile.teampk.site/",
     images: ["/assets/img/parsonal-info/parson-img-1.png"],
   },
-  alternates: { canonical: "https://pwteam.site/" },
+  alternates: { canonical: "https://profile.teampk.site/" },
 };
 
 export default function RootLayout({ children }) {
@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
               "@type": "Person",
               name: "Pannawit Krutnak",
               alternateName: ["PWTeam", "Team", "ทีม"],
-              url: "https://pwteam.site/",
+              url: "https://profile.teampk.site/",
               sameAs: [
                 "https://github.com/pwteam",
                 "https://www.linkedin.com/in/pannawitkrutnak/",
