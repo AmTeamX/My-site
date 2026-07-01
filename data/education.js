@@ -2,7 +2,7 @@ export const education = [
   {
     id: 1,
     bgClass: "bg-catkrill",
-    session: "2023 - Present",
+    session: "Expected Graduation: May 2027",
     cardTitle: "Mahidol University, Faculty of ICT",
     cardSubtitleSecondary: "BSc in Information and Communication Technology",
     locatopn:

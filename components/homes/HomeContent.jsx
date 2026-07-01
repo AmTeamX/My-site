@@ -11,14 +11,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
 
-const logos = [
-  ...clientLogos,
-  ...clientLogos,
-  ...clientLogos,
-  ...clientLogos,
-  ...clientLogos,
-  ...clientLogos,
-];
+const logos = [...clientLogos, ...clientLogos];
 
 export default function HomeContent() {
   const year = new Date().getFullYear();
@@ -79,7 +72,7 @@ export default function HomeContent() {
         </section>
 
         {/* About */}
-        <section className="reveal mb-16">
+        <section className="reveal mb-16 max-w-2xl mx-auto">
           <h2 className="section-title">About</h2>
           <p className="text-ink-muted dark:text-slate-400 leading-relaxed mb-4">
             {bioData.descOne}
@@ -99,7 +92,7 @@ export default function HomeContent() {
                   src={item.icon}
                   alt={item.title}
                   width={40}
-                  height={130}
+                  height={40}
                 />
                 <h3 className="font-semibold text-ink mt-3">{item.title}</h3>
                 <p className="text-sm text-ink-muted dark:text-slate-400">
@@ -113,7 +106,7 @@ export default function HomeContent() {
         {/* Contact Info */}
         <section className="reveal mb-16">
           <h2 className="section-title">Contact Info</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {contactData.map((item) => (
               <div key={item.id} className="flex items-center gap-3 p-4">
                 <i
@@ -134,17 +127,21 @@ export default function HomeContent() {
         {/* Clients — infinite scroll */}
         <section className="reveal mb-16">
           <h2 className="section-title">Clients</h2>
-          <div className="overflow-hidden mt-8 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-            <div className="flex gap-10 animate-scroll w-max">
+          <div className="overflow-hidden mt-8 [mask-image:linear-gradient(to_right,transparent,black_15%,black_85%,transparent)]">
+            <div className="flex gap-8 animate-scroll w-max">
               {logos.map((logo, i) => (
-                <Image
+                <div
                   key={i}
-                  src={logo.imgSrc}
-                  alt="Client"
-                  width={64}
-                  height={64}
-                  className="flex-shrink-0 w-16 h-16 rounded-full object-cover border-2 border-border dark:border-dark-border opacity-60 hover:opacity-100 hover:border-accent dark:hover:border-accent transition-all"
-                />
+                  className="flex-shrink-0 w-12 h-12 rounded-full overflow-hidden border-2 border-border dark:border-dark-border opacity-60 hover:opacity-100 hover:border-accent dark:hover:border-accent transition-all bg-white dark:bg-dark-surface flex items-center justify-center"
+                >
+                  <Image
+                    src={logo.imgSrc}
+                    alt="Client"
+                    width={48}
+                    height={48}
+                    className="w-full h-full object-contain p-1"
+                  />
+                </div>
               ))}
             </div>
           </div>
@@ -152,7 +149,7 @@ export default function HomeContent() {
 
         {/* Footer */}
         <footer className="site-footer">
-          <span>© {year} All Rights Reserved by PWTeam.</span>
+          <span>&copy; {year} All Rights Reserved by PWTeam.</span>
         </footer>
       </main>
     </>

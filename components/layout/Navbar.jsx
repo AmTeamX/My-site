@@ -28,19 +28,20 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="fixed top-0 w-full z-50 bg-[#ffffff] dark:bg-[#0f172a] border-b border-border dark:border-dark-border">
-        <nav className="max-w-4xl mx-auto px-4 h-16 flex items-center">
-          <div className="flex-1">
-            <Link href="/">
-              <Image
-                src="/assets/img/logo/FullLogoPink.png"
-                alt="PWTeam"
-                width={200}
-                height={48}
-                priority
-              />
-            </Link>
-          </div>
+      <header
+        className="fixed top-0 w-full z-50 border-b border-border dark:border-dark-border"
+        style={{ backgroundColor: dark ? "#0f172a" : "#ffffff" }}
+      >
+        <nav className="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
+          <Link href="/" className="flex-shrink-0">
+            <Image
+              src="/assets/img/logo/FullLogoPink.png"
+              alt="PWTeam"
+              width={160}
+              height={38}
+              priority
+            />
+          </Link>
 
           <div className="hidden md:flex items-center gap-8">
             {menuItems.map((item) => (
@@ -59,7 +60,7 @@ export default function Navbar() {
             ))}
           </div>
 
-          <div className="flex-1 flex items-center justify-end gap-3">
+          <div className="flex items-center gap-3">
             <button
               onClick={toggleDark}
               className="w-9 h-9 rounded-full border border-border dark:border-dark-border flex items-center justify-center text-ink-muted hover:text-accent hover:border-accent transition-colors"

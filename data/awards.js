@@ -32,8 +32,8 @@ export const projects = [
     title: "MUICT Open House Registration System",
     role: "2024",
     details: [
-      "Built a registration platform using Next.js and Express.js, handling 200+ participants concurrently.",
-      "Streamlined data collection workflows for faculty events using efficient database design.",
+      "Built a mobile-first registration platform using Next.js and Express.js, handling 200+ concurrent participants without queues.",
+      "Eliminated on-site waiting by enabling phone-based registration, significantly improving event flow and activity management.",
     ],
   },
 ];

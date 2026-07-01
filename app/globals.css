@@ -25,6 +25,7 @@
 html {
     scroll-behavior: smooth;
     overflow-x: clip;
+    color-scheme: light;
 }
 body {
     overflow-x: clip;
@@ -244,19 +245,25 @@ textarea.form-input {
 }
 .dark .filter-btn {
     background: var(--color-dark-surface);
+    color: #94a3b8;
+}
+.dark .filter-btn.active,
+.dark .filter-btn:hover {
+    background: var(--color-accent);
+    color: #fff;
 }
 
 /* ── Modal ── */
 .modal-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.75);
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(6px);
 }
 .modal-content {
     background: #ffffff;
@@ -347,7 +354,7 @@ textarea.form-input {
 
 /* ── Infinite scroll ── */
 .animate-scroll {
-    animation: scroll 20s linear infinite;
+    animation: scroll 30s linear infinite;
 }
 .animate-scroll:hover {
     animation-play-state: paused;
@@ -360,23 +367,8 @@ textarea.form-input {
         transform: translateX(-50%);
     }
 }
-.skill-bar {
-    height: 6px;
-    border-radius: 3px;
-    background: var(--color-surface);
-    overflow: hidden;
-}
-.skill-bar-fill {
-    height: 100%;
-    border-radius: 3px;
-    background: var(--color-accent);
-    transition: width 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.dark .skill-bar {
-    background: var(--color-dark-surface);
-}
 
-/* ── Dark mode: Tailwind utility overrides ── */
+/* ── Dark mode: comprehensive text overrides ── */
 .dark .text-ink {
     color: #e2e8f0;
 }
@@ -384,26 +376,30 @@ textarea.form-input {
 .dark h2,
 .dark h3,
 .dark h4,
-.dark .text-ink {
+.dark h5,
+.dark h6 {
     color: #e2e8f0;
-}
-.dark .text-ink-muted {
-    color: #94a3b8;
 }
 .dark p {
     color: #94a3b8;
 }
-.dark .bg-paper {
-    background: #0f172a;
+.dark a:not(.btn-primary):not(.text-accent) {
+    color: #94a3b8;
 }
-.dark .bg-surface {
-    background: var(--color-dark-surface);
+.dark .text-ink-muted {
+    color: #94a3b8;
 }
-.dark .border-border {
-    border-color: var(--color-dark-border);
+.dark .dark\:text-slate-400 {
+    color: #94a3b8;
+}
+.dark li {
+    color: #94a3b8;
+}
+.dark span:not(.tag):not(.text-accent):not(.text-sm.text-accent) {
+    color: inherit;
 }
 
-/* ── Dark mode: custom classes ── */
+/* ── Dark mode: component overrides ── */
 .dark .card {
     background: var(--color-dark-surface);
     border-color: var(--color-dark-border);
@@ -441,7 +437,8 @@ textarea.form-input {
     background: var(--color-dark-surface);
     color: #94a3b8;
 }
-.dark .filter-btn.active {
+.dark .filter-btn.active,
+.dark .filter-btn:hover {
     background: var(--color-accent);
     color: #fff;
 }
@@ -452,5 +449,17 @@ textarea.form-input {
     background: var(--color-dark-surface);
 }
 .dark .modal-overlay {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.85);
+}
+.dark .bg-paper {
+    background: #0f172a;
+}
+.dark .bg-surface {
+    background: var(--color-dark-surface);
+}
+.dark .border-border {
+    border-color: var(--color-dark-border);
+}
+.dark .bg-\[\#ffffff\] {
+    background: #0f172a;
 }

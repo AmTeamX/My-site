@@ -31,9 +31,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="th" className={`${poppins.className}`}>
+    <html lang="en" className={`${poppins.className}`}>
       <head>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="color-scheme" content="light dark" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var m=localStorage.getItem("darkMode");if(m==="true"){document.documentElement.classList.add("dark")}}catch(e){}})()`,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -41,13 +47,13 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Pannawit Krutnak",
-              alternateName: ["PWTeam", "Team", "ทีม"],
+              alternateName: ["PWTeam", "Team"],
               url: "https://profile.teampk.site/",
               sameAs: [
-                "https://github.com/pwteam",
-                "https://www.linkedin.com/in/pannawitkrutnak/",
+                "https://github.com/AmTeamX",
+                "https://www.linkedin.com/in/pannawit-krutnak-9728562a8/",
               ],
-              jobTitle: "Full-Stack Developer",
+              jobTitle: "Software Engineer AI Intern | Full-Stack Developer",
               nationality: "Thai",
             }),
           }}

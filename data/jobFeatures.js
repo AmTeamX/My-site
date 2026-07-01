@@ -2,7 +2,7 @@ export const items = [
   {
     id: 1,
     icon: "/assets/img/app-development.svg",
-    title: "Mobile Developer",
+    title: "Mobile Development",
     description:
       "Build cross-platform applications with Flutter and Dart. Deploy to Google Play and Apple App Store.",
     bg: "bg-catkrill",
@@ -10,7 +10,7 @@ export const items = [
   {
     id: 2,
     icon: "/assets/img/webdev.svg",
-    title: "Web Developer",
+    title: "Web Development",
     description:
       "Create full-stack web applications with Next.js, React, Express.js, and modern web technologies.",
     bg: "bg-prink",
@@ -18,9 +18,9 @@ export const items = [
   {
     id: 3,
     icon: "/assets/img/ai.svg",
-    title: "AI & Machine Learning",
+    title: "AI Integration",
     description:
-      "Develop AI solutions with TensorFlow and PyTorch. Computer vision, deep learning, and data pipelines.",
+      "Integrate AI/ML models into production systems. Computer vision, deep learning pipelines, and API-driven AI features.",
     bg: "bg-prink",
   },
   {
