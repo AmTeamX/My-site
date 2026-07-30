@@ -1,4 +1,6 @@
 export const bioData = {
-  descOne: `Dynamic and results-driven front-end developer with 3 years of experience, specializing in building scalable, responsive, and user-friendly web and mobile applications. I have developed a strong foundation in HTML, CSS, JavaScript, Next.js, Flutter, and Dart, enabling me to deliver impactful results and drive success in diverse projects.`,
-  descTwo: `and I am committed to continuous learning and professional growth.`,
+  descOne:
+    "I'm a Full-Stack Developer with experience in web development and AI integration, aiming to grow into Solution Architecture and tech consulting. I specialize in analyzing business requirements and building rapid Proof of Concepts (PoCs) using Next.js, Golang, and modern web technologies.",
+  descTwo:
+    "I enjoy collaborating with stakeholders to design practical systems that solve operational problems.",
 };
