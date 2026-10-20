@@ -11,7 +11,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
 
-const logos = [...clientLogos, ...clientLogos];
+// Repeat the base set so one half of the track is wider than the largest viewport.
+// The marquee animates -50%, so each half must be >= viewport width for a seamless loop.
+const logoHalf = Array.from({ length: 8 }, () => clientLogos).flat();
+const logos = [...logoHalf, ...logoHalf];
 
 export default function HomeContent() {
   const year = new Date().getFullYear();
@@ -124,21 +127,21 @@ export default function HomeContent() {
           </div>
         </section>
 
-        {/* Clients — infinite scroll */}
+        {/* Clients — infinite marquee (full-bleed) */}
         <section className="reveal mb-16">
           <h2 className="section-title">Clients</h2>
-          <div className="overflow-hidden mt-8 [mask-image:linear-gradient(to_right,transparent,black_15%,black_85%,transparent)]">
-            <div className="flex gap-8 animate-scroll w-max">
+          <div className="full-bleed overflow-hidden mt-8 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+            <div className="flex items-center gap-6 md:gap-8 lg:gap-10 animate-scroll w-max">
               {logos.map((logo, i) => (
                 <div
                   key={i}
-                  className="flex-shrink-0 w-12 h-12 rounded-full overflow-hidden border-2 border-border dark:border-dark-border opacity-60 hover:opacity-100 hover:border-accent dark:hover:border-accent transition-all bg-white dark:bg-dark-surface flex items-center justify-center"
+                  className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full overflow-hidden border-2 border-border dark:border-dark-border opacity-60 hover:opacity-100 hover:border-accent dark:hover:border-accent transition-all bg-white dark:bg-dark-surface flex items-center justify-center"
                 >
                   <Image
                     src={logo.imgSrc}
                     alt="Client"
-                    width={48}
-                    height={48}
+                    width={80}
+                    height={80}
                     className="w-full h-full object-contain p-1"
                   />
                 </div>

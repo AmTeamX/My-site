@@ -24,7 +24,7 @@ export const metadata = {
     description:
       "Full-Stack Developer portfolio showcasing web, mobile, and AI/ML projects.",
     url: "https://profile.teampk.site/",
-    images: ["/assets/img/parsonal-info/parson-img-1.png"],
+    images: ["/assets/img/parsonal-info/profile-avatar.png"],
   },
   alternates: { canonical: "https://profile.teampk.site/" },
 };
