@@ -1,21 +1,21 @@
 export const contactData = [
   {
     id: 1,
-    color: "#E93B81",
+    color: "#c06a45",
     fontSize: "22px",
     iconClass: "fa-regular fa-mobile",
     text: { label: "Phone", value: "(+66) 80 972 3860" },
   },
   {
     id: 2,
-    color: "#E93B81",
+    color: "#c06a45",
     fontSize: "22px",
     iconClass: "fa-regular fa-envelope-open-text",
     text: { label: "Email", value: "amteamxmail@gmail.com" },
   },
   {
     id: 3,
-    color: "#E93B81",
+    color: "#c06a45",
     fontSize: "22px",
     iconClass: "fa-solid fa-location-dot",
     text: { label: "Location", value: "Bangkok, Thailand" },

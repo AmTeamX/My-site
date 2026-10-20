@@ -63,7 +63,7 @@ export default function ContactContent() {
                   style={{ color: item.color, fontSize: item.fontSize }}
                 />
                 <div>
-                  <p className="text-sm text-ink-muted dark:text-slate-400 uppercase tracking-wider">
+                  <p className="text-sm text-ink-muted uppercase tracking-wider">
                     {item.text.label}
                   </p>
                   <p className="text-ink font-medium">{item.text.value}</p>

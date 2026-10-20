@@ -62,7 +62,7 @@ export default function ResumeContent() {
                 {edu.session}
               </span>
               <h3 className="text-lg font-bold text-ink">{edu.cardTitle}</h3>
-              <p className="text-ink-muted dark:text-slate-400">
+              <p className="text-ink-muted">
                 {edu.cardSubtitleSecondary}
               </p>
             </div>
@@ -78,7 +78,7 @@ export default function ResumeContent() {
                 {exp.session}
               </span>
               <h3 className="text-lg font-bold text-ink">{exp.role}</h3>
-              <p className="text-ink-muted dark:text-slate-400">
+              <p className="text-ink-muted">
                 {exp.company}
               </p>
             </div>
@@ -94,7 +94,7 @@ export default function ResumeContent() {
                 {proj.role}
               </span>
               <h3 className="text-lg font-bold text-ink">{proj.title}</h3>
-              <ul className="list-disc list-inside text-ink-muted dark:text-slate-400 space-y-1 mt-2">
+              <ul className="list-disc list-inside text-ink-muted space-y-1 mt-2">
                 {proj.details.map((d, i) => (
                   <li key={i} className="text-sm">
                     {d}
@@ -117,7 +117,7 @@ export default function ResumeContent() {
                 <span className="font-semibold text-ink text-sm">
                   {lang.name}
                 </span>
-                <span className="text-xs text-ink-muted dark:text-slate-400 mt-1">
+                <span className="text-xs text-ink-muted mt-1">
                   {lang.level}
                 </span>
               </div>

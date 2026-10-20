@@ -34,7 +34,8 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${poppins.className}`}>
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="color-scheme" content="light dark" />
+        <meta name="color-scheme" content="light" />
+        <meta name="theme-color" content="#faf3e9" />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){try{var m=localStorage.getItem("darkMode");if(m==="true"){document.documentElement.classList.add("dark")}}catch(e){}})()`,

@@ -1,4 +1,7 @@
-/* PWTeam · Design System */
+/* PWTeam · Design System — warm sand / peach / espresso / blue (v2)
+ * Palette sampled from the profile photo:
+ *   sand #E7CFB4 · peach #E9C6B4 · blue #0081F3 · espresso #1A0E0C
+ */
 
 @import "tailwindcss";
 @import "../public/assets/css/fontawesome.min.css";
@@ -8,17 +11,37 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --color-accent: #e93b81;
-    --color-accent-light: #fce4ec;
-    --color-ink: #1a1a2e;
-    --color-ink-muted: #64748b;
-    --color-paper: #ffffff;
-    --color-paper-muted: #f8fafc;
-    --color-surface: #f1f5f9;
-    --color-border: #e2e8f0;
-    --color-dark-bg: #0f172a;
-    --color-dark-surface: #1e293b;
-    --color-dark-border: #334155;
+    --color-accent: #9e4a2a;
+    --color-accent-strong: #7e3618;
+    --color-accent-light: #f4e2d6;
+    --color-azure: #1168c8;
+    --color-azure-light: #e2edfb;
+    --color-ink: #2a1b14;
+    --color-ink-muted: #7b6757;
+    --color-paper: #faf3e9;
+    --color-paper-muted: #f4e8d8;
+    --color-surface: #efe1cf;
+    --color-border: #e3d0ba;
+    --color-dark-bg: #191210;
+    --color-dark-surface: #241a16;
+    --color-dark-border: #3a2a23;
+}
+
+/* Dark mode shifts the same semantic tokens, so every utility
+ * (text-ink, bg-paper, border-border, text-accent …) adapts automatically. */
+.dark {
+    --color-accent: #e59a74;
+    --color-accent-strong: #f0b494;
+    --color-accent-light: #3a241a;
+    --color-azure: #6aa8ee;
+    --color-azure-light: #1c2a3c;
+    --color-ink: #f3e7db;
+    --color-ink-muted: #a9968a;
+    --color-paper: #191210;
+    --color-paper-muted: #201713;
+    --color-surface: #241a16;
+    --color-border: #3a2a23;
+    color-scheme: dark;
 }
 
 /* ── Base ── */
@@ -30,14 +53,19 @@ html {
 body {
     overflow-x: clip;
     font-family: "Poppins", sans-serif;
-    background: #ffffff;
+    background: var(--color-paper);
     color: var(--color-ink-muted);
     -webkit-font-smoothing: antialiased;
 }
 
-.dark body {
-    background: #0f172a;
-    color: #94a3b8;
+::selection {
+    background: var(--color-azure);
+    color: #ffffff;
+}
+
+*:focus-visible {
+    outline: 2px solid var(--color-azure);
+    outline-offset: 2px;
 }
 
 /* ── Page transition ── */
@@ -86,13 +114,10 @@ body {
     background: var(--color-accent);
     border-radius: 2px;
 }
-.dark .section-title {
-    color: #f1f5f9;
-}
 
 /* ── Cards ── */
 .card {
-    background: #ffffff;
+    background: #fffcf7;
     border: 1px solid var(--color-border);
     border-radius: 12px;
     padding: 1.5rem;
@@ -100,15 +125,14 @@ body {
 }
 .card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 10px 30px rgba(74, 46, 32, 0.1);
     border-color: var(--color-accent);
 }
 .dark .card {
     background: var(--color-dark-surface);
-    border-color: var(--color-dark-border);
 }
 .dark .card:hover {
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
 /* ── Tag / Pill ── */
@@ -120,10 +144,7 @@ body {
     font-size: 0.8rem;
     font-weight: 500;
     background: var(--color-accent-light);
-    color: var(--color-accent);
-}
-.dark .tag {
-    background: rgba(233, 59, 129, 0.15);
+    color: var(--color-accent-strong);
 }
 
 /* ── Buttons ── */
@@ -142,10 +163,10 @@ body {
 }
 .btn-primary {
     background: var(--color-accent);
-    color: #fff;
+    color: #ffffff;
 }
 .btn-primary:hover {
-    background: #d63071;
+    background: var(--color-accent-strong);
     transform: translateY(-1px);
 }
 .btn-outline {
@@ -156,10 +177,6 @@ body {
 .btn-outline:hover {
     border-color: var(--color-accent);
     color: var(--color-accent);
-}
-.dark .btn-outline {
-    color: #e2e8f0;
-    border-color: var(--color-dark-border);
 }
 
 /* ── Form ── */
@@ -182,7 +199,7 @@ body {
     border-radius: 8px;
     font-size: 0.95rem;
     font-family: inherit;
-    background: #ffffff;
+    background: #fffcf7;
     color: var(--color-ink);
     transition: border-color 0.2s;
 }
@@ -192,8 +209,6 @@ body {
 }
 .dark .form-input {
     background: var(--color-dark-surface);
-    border-color: var(--color-dark-border);
-    color: #e2e8f0;
 }
 
 textarea.form-input {
@@ -222,9 +237,6 @@ textarea.form-input {
     border-radius: 50%;
     background: var(--color-accent);
 }
-.dark .timeline-item {
-    border-color: var(--color-dark-border);
-}
 
 /* ── Filter bar ── */
 .filter-btn {
@@ -241,23 +253,14 @@ textarea.form-input {
 .filter-btn.active,
 .filter-btn:hover {
     background: var(--color-accent);
-    color: #fff;
-}
-.dark .filter-btn {
-    background: var(--color-dark-surface);
-    color: #94a3b8;
-}
-.dark .filter-btn.active,
-.dark .filter-btn:hover {
-    background: var(--color-accent);
-    color: #fff;
+    color: #ffffff;
 }
 
 /* ── Modal ── */
 .modal-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(26, 18, 14, 0.72);
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -266,7 +269,7 @@ textarea.form-input {
     backdrop-filter: blur(6px);
 }
 .modal-content {
-    background: #ffffff;
+    background: #fffcf7;
     border-radius: 16px;
     padding: 2rem;
     max-width: 700px;
@@ -277,6 +280,9 @@ textarea.form-input {
 .dark .modal-content {
     background: var(--color-dark-surface);
 }
+.dark .modal-overlay {
+    background: rgba(0, 0, 0, 0.85);
+}
 .modal-close {
     position: absolute;
     top: 1rem;
@@ -286,7 +292,7 @@ textarea.form-input {
     border-radius: 50%;
     border: none;
     background: var(--color-accent);
-    color: #fff;
+    color: #ffffff;
     font-size: 1rem;
     cursor: pointer;
     display: flex;
@@ -301,9 +307,6 @@ textarea.form-input {
     font-size: 0.85rem;
     color: var(--color-ink-muted);
     border-top: 1px solid var(--color-border);
-}
-.dark .site-footer {
-    border-color: var(--color-dark-border);
 }
 
 /* ── Reduced motion ── */
@@ -323,7 +326,7 @@ textarea.form-input {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #ffffff;
+    background: var(--color-paper);
     z-index: 100;
     padding: 2rem;
     transform: translateX(100%);
@@ -331,9 +334,6 @@ textarea.form-input {
 }
 .mobile-menu.open {
     transform: translateX(0);
-}
-.dark .mobile-menu {
-    background: #0f172a;
 }
 .mobile-menu a {
     display: block;
@@ -343,10 +343,6 @@ textarea.form-input {
     color: var(--color-ink);
     border-bottom: 1px solid var(--color-border);
     text-decoration: none;
-}
-.dark .mobile-menu a {
-    color: #e2e8f0;
-    border-color: var(--color-dark-border);
 }
 .mobile-menu a:hover {
     color: var(--color-accent);
@@ -373,100 +369,4 @@ textarea.form-input {
     100% {
         transform: translateX(-50%);
     }
-}
-
-/* ── Dark mode: comprehensive text overrides ── */
-.dark .text-ink {
-    color: #e2e8f0;
-}
-.dark h1,
-.dark h2,
-.dark h3,
-.dark h4,
-.dark h5,
-.dark h6 {
-    color: #e2e8f0;
-}
-.dark p {
-    color: #94a3b8;
-}
-.dark a:not(.btn-primary):not(.text-accent) {
-    color: #94a3b8;
-}
-.dark .text-ink-muted {
-    color: #94a3b8;
-}
-.dark .dark\:text-slate-400 {
-    color: #94a3b8;
-}
-.dark li {
-    color: #94a3b8;
-}
-.dark span:not(.tag):not(.text-accent):not(.text-sm.text-accent) {
-    color: inherit;
-}
-
-/* ── Dark mode: component overrides ── */
-.dark .card {
-    background: var(--color-dark-surface);
-    border-color: var(--color-dark-border);
-}
-.dark .card:hover {
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-    border-color: var(--color-accent);
-}
-.dark .site-footer {
-    border-color: var(--color-dark-border);
-}
-.dark .timeline-item {
-    border-color: var(--color-dark-border);
-}
-.dark .mobile-menu {
-    background: #0f172a;
-}
-.dark .mobile-menu a {
-    color: #e2e8f0;
-    border-color: var(--color-dark-border);
-}
-.dark .form-label {
-    color: #94a3b8;
-}
-.dark .form-input {
-    background: var(--color-dark-surface);
-    border-color: var(--color-dark-border);
-    color: #e2e8f0;
-}
-.dark .btn-outline {
-    color: #e2e8f0;
-    border-color: var(--color-dark-border);
-}
-.dark .filter-btn {
-    background: var(--color-dark-surface);
-    color: #94a3b8;
-}
-.dark .filter-btn.active,
-.dark .filter-btn:hover {
-    background: var(--color-accent);
-    color: #fff;
-}
-.dark .tag {
-    background: rgba(233, 59, 129, 0.15);
-}
-.dark .modal-content {
-    background: var(--color-dark-surface);
-}
-.dark .modal-overlay {
-    background: rgba(0, 0, 0, 0.85);
-}
-.dark .bg-paper {
-    background: #0f172a;
-}
-.dark .bg-surface {
-    background: var(--color-dark-surface);
-}
-.dark .border-border {
-    border-color: var(--color-dark-border);
-}
-.dark .bg-\[\#ffffff\] {
-    background: #0f172a;
 }

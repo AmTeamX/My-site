@@ -28,18 +28,24 @@ export default function Navbar() {
 
   return (
     <>
-      <header
-        className="fixed top-0 w-full z-50 border-b border-border dark:border-dark-border"
-        style={{ backgroundColor: dark ? "#0f172a" : "#ffffff" }}
-      >
+      <header className="fixed top-0 w-full z-50 bg-paper border-b border-border">
         <nav className="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
           <Link href="/" className="flex-shrink-0">
             <Image
-              src="/assets/img/logo/FullLogoPink.png"
+              src="/assets/img/logo/FullLogoTheme.png"
               alt="PWTeam"
               width={160}
               height={38}
               priority
+              className="dark:hidden"
+            />
+            <Image
+              src="/assets/img/logo/FullLogoThemeDark.png"
+              alt="PWTeam"
+              width={160}
+              height={38}
+              priority
+              className="hidden dark:block"
             />
           </Link>
 
@@ -52,7 +58,7 @@ export default function Navbar() {
                   pathname === item.href ||
                   (item.href !== "/" && pathname.startsWith(item.href))
                     ? "text-accent"
-                    : "text-ink-muted dark:text-slate-400 hover:text-accent"
+                    : "text-ink-muted hover:text-accent"
                 }`}
               >
                 {item.text}

@@ -44,7 +44,7 @@ export default function PortfolioContent() {
 
             <div className="grid grid-cols-2 gap-4 mb-4">
               <div>
-                <p className="text-xs text-ink-muted dark:text-slate-400 uppercase tracking-wider">
+                <p className="text-xs text-ink-muted uppercase tracking-wider">
                   Project
                 </p>
                 <p className="text-sm text-ink font-medium">
@@ -52,7 +52,7 @@ export default function PortfolioContent() {
                 </p>
               </div>
               <div>
-                <p className="text-xs text-ink-muted dark:text-slate-400 uppercase tracking-wider">
+                <p className="text-xs text-ink-muted uppercase tracking-wider">
                   Client
                 </p>
                 <p className="text-sm text-ink font-medium">
@@ -60,7 +60,7 @@ export default function PortfolioContent() {
                 </p>
               </div>
               <div>
-                <p className="text-xs text-ink-muted dark:text-slate-400 uppercase tracking-wider">
+                <p className="text-xs text-ink-muted uppercase tracking-wider">
                   Languages
                 </p>
                 <p className="text-sm text-ink font-medium">
@@ -68,7 +68,7 @@ export default function PortfolioContent() {
                 </p>
               </div>
               <div>
-                <p className="text-xs text-ink-muted dark:text-slate-400 uppercase tracking-wider">
+                <p className="text-xs text-ink-muted uppercase tracking-wider">
                   Preview
                 </p>
                 {modalContent?.previewLink ? (
@@ -92,7 +92,7 @@ export default function PortfolioContent() {
               {modalContent?.desc.map((d, i) => (
                 <p
                   key={i}
-                  className="text-sm text-ink-muted dark:text-slate-400 leading-relaxed"
+                  className="text-sm text-ink-muted leading-relaxed"
                 >
                   {d}
                 </p>

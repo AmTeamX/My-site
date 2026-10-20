@@ -48,7 +48,7 @@ export default function HomeContent() {
           <h1 className="text-4xl md:text-5xl font-bold text-ink mb-2">
             {profileInfo.name}
           </h1>
-          <p className="text-lg text-ink-muted dark:text-slate-400 mb-4">
+          <p className="text-lg text-ink-muted mb-4">
             {profileInfo.title}
           </p>
           <div className="flex justify-center gap-4 mb-6">
@@ -58,7 +58,7 @@ export default function HomeContent() {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full border border-border dark:border-dark-border flex items-center justify-center text-ink-muted dark:text-slate-400 hover:text-accent hover:border-accent dark:hover:border-accent transition-colors"
+                className="w-10 h-10 rounded-full border border-border dark:border-dark-border flex items-center justify-center text-ink-muted hover:text-accent hover:border-accent dark:hover:border-accent transition-colors"
                 aria-label={social.className}
               >
                 <i className={social.className} />
@@ -77,10 +77,10 @@ export default function HomeContent() {
         {/* About */}
         <section className="reveal mb-16 max-w-2xl mx-auto">
           <h2 className="section-title">About</h2>
-          <p className="text-ink-muted dark:text-slate-400 leading-relaxed mb-4">
+          <p className="text-ink-muted leading-relaxed mb-4">
             {bioData.descOne}
           </p>
-          <p className="text-ink-muted dark:text-slate-400 leading-relaxed">
+          <p className="text-ink-muted leading-relaxed">
             {bioData.descTwo}
           </p>
         </section>
@@ -98,7 +98,7 @@ export default function HomeContent() {
                   height={40}
                 />
                 <h3 className="font-semibold text-ink mt-3">{item.title}</h3>
-                <p className="text-sm text-ink-muted dark:text-slate-400">
+                <p className="text-sm text-ink-muted">
                   {item.description}
                 </p>
               </div>
@@ -117,7 +117,7 @@ export default function HomeContent() {
                   style={{ color: item.color, fontSize: item.fontSize }}
                 />
                 <div>
-                  <p className="text-sm text-ink-muted dark:text-slate-400 uppercase tracking-wider">
+                  <p className="text-sm text-ink-muted uppercase tracking-wider">
                     {item.text.label}
                   </p>
                   <p className="text-ink font-medium">{item.text.value}</p>
@@ -130,7 +130,7 @@ export default function HomeContent() {
         {/* Clients — infinite marquee (full-bleed) */}
         <section className="reveal mb-16">
           <h2 className="section-title">Clients</h2>
-          <div className="full-bleed overflow-hidden mt-8 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+          <div className="overflow-hidden mt-8 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
             <div className="flex items-center gap-6 md:gap-8 lg:gap-10 animate-scroll w-max">
               {logos.map((logo, i) => (
                 <div
