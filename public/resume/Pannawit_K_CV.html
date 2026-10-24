@@ -137,6 +137,45 @@
       .job-entry,
       .project-entry {
         margin-bottom: 7px;
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+
+      section.education,
+      section.skills {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+
+      section.projects {
+        page-break-before: always;
+        break-before: page;
+        padding-top: 8px;
+      }
+
+      .section-title {
+        page-break-after: avoid;
+        break-after: avoid;
+      }
+
+      li {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+
+      @media print {
+        body {
+          background-color: #ffffff;
+          padding: 0;
+        }
+        .download-container {
+          display: none;
+        }
+        .resume-container {
+          box-shadow: none;
+          padding: 0 20px;
+          max-width: 100%;
+        }
       }
 
       .entry-header {
@@ -476,10 +515,15 @@
       function generatePDF() {
         const element = document.getElementById("resume-content");
         const opt = {
-          margin: [0.15, 0, 0.15, 0],
+          margin: [0.35, 0, 0.35, 0],
           filename: "Pannawit Krutnak.pdf",
           image: { type: "jpeg", quality: 0.98 },
-          html2canvas: { scale: 2, useCORS: true },
+          html2canvas: { scale: 2, useCORS: true, scrollY: 0 },
+          pagebreak: {
+            mode: ["css", "legacy"],
+            before: "section.projects",
+            avoid: [".job-entry", ".project-entry", "section.education", "section.skills", "li", ".section-title"],
+          },
           jsPDF: {
             unit: "in",
             format: "a4",
