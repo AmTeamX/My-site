@@ -1,520 +1,494 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Pannawit Krutnak - Resume</title>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap"
-            rel="stylesheet"
-        />
-        <!-- Include html2pdf.js -->
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
-            integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
-            crossorigin="anonymous"
-        ></script>
-        <style>
-            /* --- Global Styles --- */
-            body {
-                font-family:
-                    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-                    Helvetica, Arial, sans-serif;
-                background-color: #f5f5f5;
-                color: #333;
-                line-height: 1.5;
-                margin: 0;
-                padding: 20px 0;
-                font-size: 14px;
-            }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pannawit Krutnak - Resume</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Include html2pdf.js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      /* --- Global Styles --- */
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        background-color: #f5f5f5;
+        color: #2b2b2b;
+        line-height: 1.42;
+        margin: 0;
+        padding: 20px 0;
+        font-size: 13.2px;
+      }
 
-            .resume-container {
-                max-width: 800px;
-                margin: 0 auto;
-                padding: 40px;
-                background-color: #ffffff;
-                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-                border-radius: 4px;
-            }
+      .resume-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 32px 40px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
 
-            a {
-                color: #007bff;
-                text-decoration: none;
-            }
+      a {
+        color: #0056b3;
+        text-decoration: none;
+      }
 
-            a:hover {
-                text-decoration: underline;
-            }
+      a:hover {
+        text-decoration: underline;
+      }
 
-            h1,
-            h2,
-            h3,
-            h4 {
-                margin: 0;
-                font-weight: 700;
-            }
+      h1,
+      h2,
+      h3,
+      h4 {
+        margin: 0;
+        font-weight: 700;
+      }
 
-            ul {
-                margin: 5px 0 0 0;
-                padding-left: 18px;
-            }
+      ul {
+        margin: 3px 0 0 0;
+        padding-left: 18px;
+      }
 
-            li {
-                margin-bottom: 3px;
-            }
+      li {
+        margin-bottom: 2.5px;
+      }
 
-            /* --- Header Section --- */
-            header {
-                text-align: center;
-                border-bottom: 2px solid #333;
-                padding-bottom: 15px;
-                margin-bottom: 15px;
-            }
+      /* --- Header Section --- */
+      header {
+        text-align: center;
+        border-bottom: 2px solid #222;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+      }
 
-            header h1 {
-                font-size: 2.2em;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                color: #000;
-                margin-bottom: 5px;
-            }
+      header h1 {
+        font-size: 2.1em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #000;
+        margin-bottom: 3px;
+      }
 
-            header .job-title {
-                font-size: 1.1em;
-                font-weight: 600;
-                color: #555;
-                margin-bottom: 8px;
-            }
+      header .job-title {
+        font-size: 1.05em;
+        font-weight: 600;
+        color: #444;
+        margin-bottom: 6px;
+      }
 
-            header .contact-info {
-                font-size: 0.95em;
-                color: #444;
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 15px;
-            }
+      header .contact-info {
+        font-size: 0.92em;
+        color: #444;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
 
-            header .contact-info span {
-                color: #ccc;
-            }
+      header .contact-info span {
+        color: #bbb;
+      }
 
-            /* --- Section Styles --- */
-            section {
-                margin-bottom: 12px;
-            }
+      /* --- Section Styles --- */
+      section {
+        margin-bottom: 10px;
+      }
 
-            .section-title {
-                font-size: 1.1em;
-                text-transform: uppercase;
-                border-bottom: 1px solid #ccc;
-                padding-bottom: 3px;
-                margin-bottom: 10px;
-                color: #007bff;
-                font-weight: 700;
-                letter-spacing: 0.5px;
-            }
+      .section-title {
+        font-size: 1.05em;
+        text-transform: uppercase;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 2px;
+        margin-bottom: 7px;
+        color: #0056b3;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+      }
 
-            /* --- Summary --- */
-            .summary p {
-                margin: 0;
-                text-align: justify;
-            }
+      /* --- Skills --- */
+      .skills-grid {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 3px 14px;
+      }
 
-            /* --- Education --- */
-            .education-item {
-                display: flex;
-                justify-content: space-between;
-                margin-bottom: 5px;
-            }
+      .skill-category {
+        font-weight: 700;
+        color: #333;
+        white-space: nowrap;
+      }
 
-            .education-details {
-                font-style: italic;
-                color: #555;
-            }
+      .skill-list {
+        color: #444;
+      }
 
-            /* --- Skills --- */
-            .skills-grid {
-                display: grid;
-                grid-template-columns: auto 1fr;
-                gap: 5px 15px;
-            }
+      /* --- Experience & Projects --- */
+      .job-entry,
+      .project-entry {
+        margin-bottom: 7px;
+      }
 
-            .skill-category {
-                font-weight: 700;
-                color: #444;
-                white-space: nowrap;
-            }
+      .entry-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 1px;
+      }
 
-            .skill-list {
-                color: #555;
-            }
+      .entry-title {
+        font-size: 1.02em;
+        font-weight: 700;
+        color: #111;
+      }
 
-            /* --- Experience & Projects --- */
-            .entry-header {
-                display: flex;
-                justify-content: space-between;
-                align-items: baseline;
-                margin-bottom: 2px;
-            }
+      .entry-subtitle {
+        font-weight: 600;
+        color: #444;
+        font-size: 0.96em;
+      }
 
-            .entry-title {
-                font-size: 1.05em;
-                font-weight: 700;
-                color: #222;
-            }
+      .entry-date {
+        font-size: 0.9em;
+        color: #555;
+        font-style: italic;
+        white-space: nowrap;
+      }
 
-            .entry-subtitle {
-                font-weight: 600;
-                color: #444;
-            }
+      .entry-content {
+        color: #444;
+      }
 
-            .entry-date,
-            .entry-location {
-                font-size: 0.9em;
-                color: #666;
-                font-style: italic;
-                white-space: nowrap;
-            }
+      /* Button Styles */
+      .download-container {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .download-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #0056b3;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 1em;
+        cursor: pointer;
+        font-family: inherit;
+        transition: background-color 0.2s;
+      }
+      .download-btn:hover {
+        background-color: #003d82;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="download-container">
+      <button onclick="generatePDF()" class="download-btn">
+        📄 Download PDF (Pannawit Krutnak.pdf)
+      </button>
+    </div>
 
-            .entry-content {
-                color: #444;
-            }
+    <div class="resume-container" id="resume-content">
+      <!-- Header -->
+      <header>
+        <h1>Pannawit Krutnak</h1>
+        <div class="job-title">
+          Full-Stack Software Engineer | Payment Systems & Applied AI
+        </div>
+        <div class="contact-info">
+          <a href="mailto:amteamxmail@gmail.com">amteamxmail@gmail.com</a>
+          <span>|</span>
+          <a href="tel:0809723860">080-972-3860</a>
+          <span>|</span>
+          <a href="https://profile.teampk.site" target="_blank">teampk.site</a>
+          <span>|</span>
+          <a href="https://github.com/AmTeamX" target="_blank"
+            >github.com/AmTeamX</a
+          >
+          <span>|</span>
+          <a
+            href="https://www.linkedin.com/in/pannawit-krutnak-9728562a8/"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </div>
+      </header>
 
-            /* Button Styles */
-            .download-container {
-                text-align: center;
-                margin-bottom: 20px;
-            }
-            .download-btn {
-                display: inline-block;
-                padding: 10px 20px;
-                background-color: #007bff;
-                color: white;
-                border: none;
-                border-radius: 4px;
-                font-size: 1em;
-                cursor: pointer;
-                font-family: inherit;
-                transition: background-color 0.2s;
-            }
-            .download-btn:hover {
-                background-color: #0056b3;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="download-container">
-            <button onclick="generatePDF()" class="download-btn">
-                📄 Download PDF Version
-            </button>
+      <!-- Education -->
+      <section class="education">
+        <div class="section-title">Education</div>
+        <div class="entry-header">
+          <div class="entry-title">
+            Mahidol University — Faculty of Information and Communication
+            Technology (ICT)
+          </div>
+          <div class="entry-date">Expected Graduation: May 2027</div>
+        </div>
+        <div class="entry-subtitle">
+          Bachelor of Science in Computer Science / Information and
+          Communication Technology
+        </div>
+        <div class="entry-content">
+          Relevant Coursework: Software Engineering & SDLC, Database Systems,
+          Data Structures & Algorithms, AI & Machine Learning, Web & Mobile
+          Architecture
+        </div>
+      </section>
+
+      <!-- Technical Skills -->
+      <section class="skills">
+        <div class="section-title">Technical Skills</div>
+        <div class="skills-grid">
+          <div class="skill-category">Languages:</div>
+          <div class="skill-list">
+            Python, JavaScript , TypeScript, Golang, SQL, PHP, C/C++, Dart
+          </div>
+
+          <div class="skill-category">Frontend & Web:</div>
+          <div class="skill-list">
+            React, Next.js, HTML/CSS, Tailwind CSS, Flutter (Cross-Platform)
+          </div>
+
+          <div class="skill-category">Backend & Data:</div>
+          <div class="skill-list">
+            Node.js, Express.js, Go Microservices, RESTful APIs, PostgreSQL,
+            MongoDB, Redis
+          </div>
+
+          <div class="skill-category">AI & Automation:</div>
+          <div class="skill-list">
+            LLM & AI Workflow Integration, AI Web Crawlers (Crawl4AI), PyTorch,
+            TensorFlow, Scikit-Learn, Pandas
+          </div>
+
+          <div class="skill-category">Architecture & Tools:</div>
+          <div class="skill-list">
+            Postman (API Testing), System Architecture (ER, Sequence & Process
+            Flow Diagrams), Docker, Git, CI/CD (Buildkite), Agile/Scrum,
+            Confluence
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="experience">
+        <div class="section-title">Experience</div>
+
+        <div class="job-entry">
+          <div class="entry-header">
+            <div class="entry-title">Omise (Opn Payments)</div>
+            <div class="entry-date">Apr 2026 – Present</div>
+          </div>
+          <div class="entry-subtitle">Software Engineer AI Intern</div>
+          <ul>
+            <li>
+              Designed system architecture,
+              <strong
+                >ER diagrams, SQL schemas, sequence diagrams, and process
+                flows</strong
+              >
+              in Confluence for an enterprise
+              <strong>Merchant Onboarding & Case Management System</strong>
+              handling APAC cases and US applications.
+            </li>
+            <li>
+              Collaborated with product managers and operations teams to
+              translate complex business requirements into scalable payment
+              gateway workflows, focusing on <strong>KYC</strong> and automated
+              risk/onboarding verification.
+            </li>
+            <li>
+              Developed full-stack Proof of Concepts (PoCs) using
+              <strong>Next.js, React, Golang, and Node.js</strong> to validate
+              AI-driven workflow automation and customer support operations.
+            </li>
+          </ul>
         </div>
 
-        <div class="resume-container" id="resume-content">
-            <!-- Header -->
-            <header>
-                <h1>Pannawit Krutnak</h1>
-                <div class="job-title">
-                    Software Engineer AI Intern @ Omise | Full-Stack Developer
-                </div>
-                <div class="contact-info">
-                    <a href="mailto:amteamxmail@gmail.com"
-                        >amteamxmail@gmail.com</a
-                    >
-                    <span>|</span>
-                    <a href="tel:0809723860">080-972-3860</a>
-                    <span>|</span>
-                    <a href="https://www.profile.teampk.site" target="_blank"
-                        >www.profile.teampk.site</a
-                    >
-                    <span>|</span>
-                    <a href="https://github.com/AmTeamX" target="_blank"
-                        >github.com/AmTeamX</a
-                    >
-                    <span>|</span>
-                    <a
-                        href="https://www.linkedin.com/in/pannawit-krutnak-9728562a8/"
-                        target="_blank"
-                        >LinkedIn</a
-                    >
-                </div>
-            </header>
-
-            <!-- Education -->
-            <section class="education">
-                <div class="section-title">Education</div>
-                <div class="entry-header">
-                    <div class="entry-title">
-                        Mahidol University, Faculty of ICT
-                    </div>
-                    <div class="entry-date">Expected Graduation: May 2027</div>
-                </div>
-                <div class="entry-subtitle">
-                    Bachelor of Science in Information and Communication
-                    Technology
-                </div>
-                <div class="entry-content">
-                    Relevant Coursework: Data Structures & Algorithms, Software
-                    Engineering, AI & Machine Learning, Web & Mobile Development
-                </div>
-            </section>
-
-            <!-- Experience -->
-            <section class="experience">
-                <div class="section-title">Experience</div>
-
-                <div class="job-entry">
-                    <div class="entry-header">
-                        <div class="entry-title">Omise (Opn Payments)</div>
-                        <div class="entry-date">Apr 2026 - Present</div>
-                    </div>
-                    <div class="entry-subtitle">
-                        Software Engineer AI Intern
-                    </div>
-                    <ul>
-                        <li>
-                            Collaborated with product managers and operational
-                            teams to analyze business requirements and design AI
-                            solutions for the payment gateway, focusing on
-                            <strong>KYC</strong> and user onboarding.
-                        </li>
-                        <li>
-                            Developed and presented
-                            <strong>Proof of Concepts (PoCs)</strong> using
-                            <strong>Next.js, Golang, and JavaScript</strong> to
-                            validate technical feasibility for stakeholders.
-                        </li>
-                        <li>
-                            Built an FAQ chatbot using static decision-tree
-                            logic to streamline customer support operations.
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="job-entry" style="margin-top: 10px">
-                    <div class="entry-header">
-                        <div class="entry-title">
-                            Tech Horizon (Japan-based Fintech)
-                        </div>
-                        <div class="entry-date">Jan 2026 - Mar 2026</div>
-                    </div>
-                    <div class="entry-subtitle">
-                        Backend Developer Intern / Part-time
-                    </div>
-                    <ul>
-                        <li>
-                            <strong>Digital Wallet & BNPL Development:</strong>
-                            Engineering a Japanese e-wallet ecosystem using
-                            <strong>PHP</strong>, integrating "Buy Now, Pay
-                            Later" (BNPL) functionality to allow users to make
-                            deferred payments.
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="job-entry" style="margin-top: 10px">
-                    <div class="entry-header">
-                        <div class="entry-title">
-                            Biomedical Informatics Research Lab
-                        </div>
-                        <div class="entry-date">Aug 2024 - Present</div>
-                    </div>
-                    <div class="entry-subtitle">Lab Assistant</div>
-                    <ul>
-                        <li>
-                            Engineered end-to-end AI pipelines using
-                            <strong>TensorFlow</strong> and
-                            <strong>PyTorch</strong> to process Full HD 240fps
-                            video data for reproducible research.
-                        </li>
-                        <li>
-                            Designed a web platform for streaming Full HD 240fps
-                            video and deploying AI solutions, enabling
-                            researchers to interact with models via
-                            <strong>RESTful APIs</strong>.
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="job-entry" style="margin-top: 10px">
-                    <div class="entry-header">
-                        <div class="entry-title">CourseSquare</div>
-                        <div class="entry-date">2024</div>
-                    </div>
-                    <div class="entry-subtitle">
-                        Software Engineering Intern
-                    </div>
-                    <ul>
-                        <li>
-                            Collaborated in an agile environment to maintain and
-                            enhance the educational platform's web applications.
-                        </li>
-                        <li>
-                            Identified and resolved critical bugs, contributing
-                            to increased platform stability.
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Projects & Awards -->
-            <section class="projects">
-                <div class="section-title">Projects & Awards</div>
-
-                <div class="project-entry">
-                    <div class="entry-header">
-                        <div class="entry-title">
-                            BONDUP - Community & Activity App
-                        </div>
-                        <div class="entry-date">
-                            Lead Mobile Developer (Flutter)
-                        </div>
-                    </div>
-                    <ul>
-                        <li>
-                            Developed an application for real-time activity
-                            management using
-                            <strong>Flutter</strong> and
-                            <strong>Clean Architecture</strong>.
-                        </li>
-                        <li>
-                            Managed state management and API integration to
-                            ensure seamless real-time data updates.
-                        </li>
-                        <li>
-                            Handled the deployment process on
-                            <strong>Google Play Console</strong> and
-                            <strong>Apple App Store</strong>.
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="project-entry" style="margin-top: 8px">
-                    <div class="entry-header">
-                        <div class="entry-title">
-                            BlinkDx – AI-Powered Blink Anomaly Detection
-                        </div>
-                        <div class="entry-date">
-                            Honorable Mention – NSC 2025
-                        </div>
-                    </div>
-                    <ul>
-                        <li>
-                            Developed a deep learning system achieving 95%
-                            accuracy in detecting blink irregularities for
-                            medical diagnosis.
-                        </li>
-                        <li>
-                            Utilized computer vision models for real-time
-                            patient video analysis.
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="project-entry" style="margin-top: 8px">
-                    <div class="entry-header">
-                        <div class="entry-title">
-                            AI System for Restricted Area Protection
-                        </div>
-                        <div class="entry-date">
-                            1st Prize – AI Hackathon 2024
-                        </div>
-                    </div>
-                    <ul>
-                        <li>
-                            Designed a surveillance system for bird detection
-                            capable of operating effectively under dynamic
-                            environmental conditions.
-                        </li>
-                        <li>
-                            Integrated camera and laser automation for precise
-                            area protection.
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="project-entry" style="margin-top: 8px">
-                    <div class="entry-header">
-                        <div class="entry-title">
-                            MUICT Open House Registration System
-                        </div>
-                        <div class="entry-date">2024</div>
-                    </div>
-                    <ul>
-                        <li>
-                            Built a mobile-first registration platform using
-                            <strong>Next.js</strong> and
-                            <strong>Express.js</strong>, handling 200+
-                            concurrent participants without queues.
-                        </li>
-                        <li>
-                            Eliminated on-site waiting by enabling phone-based
-                            registration, significantly improving event flow and
-                            activity management.
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Technical Skills -->
-            <section class="skills">
-                <div class="section-title">Technical Skills</div>
-                <div class="skills-grid">
-                    <div class="skill-category">Languages:</div>
-                    <div class="skill-list">
-                        Python, C/C++, Golang, JavaScript, TypeScript, Dart,
-                        PHP, SQL
-                    </div>
-
-                    <div class="skill-category">Frontend:</div>
-                    <div class="skill-list">
-                        Flutter, Next.js, React, HTML/CSS, Tailwind CSS
-                    </div>
-
-                    <div class="skill-category">Backend:</div>
-                    <div class="skill-list">
-                        Node.js, Express.js, PostgreSQL, MongoDB, Redis,
-                        Firebase, RESTful APIs
-                    </div>
-
-                    <div class="skill-category">Mobile Deployment:</div>
-                    <div class="skill-list">
-                        Google Play Console, Apple App Store, App Signing, CI/CD
-                        for Mobile
-                    </div>
-
-                    <div class="skill-category">AI/ML:</div>
-                    <div class="skill-list">
-                        TensorFlow, PyTorch, Scikit-Learn, Pandas, NumPy,
-                        Computer Vision
-                    </div>
-
-                    <div class="skill-category">Tools/DevOps:</div>
-                    <div class="skill-list">
-                        Git, Docker, Linux, Agile/Scrum, UML
-                    </div>
-                </div>
-            </section>
+        <div class="job-entry">
+          <div class="entry-header">
+            <div class="entry-title">Tech Horizon (Japan-based FinTech)</div>
+            <div class="entry-date">Jan 2026 – Mar 2026</div>
+          </div>
+          <div class="entry-subtitle">Backend Developer Intern / Part-Time</div>
+          <ul>
+            <li>
+              Engineered backend transaction services for a Japanese digital
+              wallet ecosystem using <strong>PHP and SQL</strong>, integrating
+              <strong>"Buy Now, Pay Later" (BNPL)</strong> deferred payment
+              workflows, repayment tracking, and API gateway integrations.
+            </li>
+          </ul>
         </div>
 
-        <script>
-            function generatePDF() {
-                const element = document.getElementById("resume-content");
-                const opt = {
-                    margin: [0.2, 0, 0.2, 0] /* top, left, bottom, right */,
-                    filename: "Pannawit_Krutnak_CV.pdf",
-                    image: { type: "jpeg", quality: 0.98 },
-                    html2canvas: { scale: 2, useCORS: true },
-                    jsPDF: {
-                        unit: "in",
-                        format: "a4",
-                        orientation: "portrait",
-                    },
-                };
+        <div class="job-entry">
+          <div class="entry-header">
+            <div class="entry-title">
+              Mahidol University (Biomedical Informatics & Research Systems)
+            </div>
+            <div class="entry-date">2023 – Present</div>
+          </div>
+          <div class="entry-subtitle">Lab Assistant</div>
+          <ul>
+            <li>
+              Supported university faculty in designing and maintaining
+              full-stack research web systems, registration screening platforms,
+              and automated data pipelines.
+            </li>
+            <li>
+              Engineered end-to-end AI video analysis pipelines (<strong
+                >PyTorch, TensorFlow</strong
+              >) and deployed web dashboards connected via
+              <strong>RESTful APIs</strong> for clinical researchers.
+            </li>
+          </ul>
+        </div>
 
-                // Generate and download the PDF
-                html2pdf().set(opt).from(element).save();
-            }
-        </script>
-    </body>
+        <div class="job-entry">
+          <div class="entry-header">
+            <div class="entry-title">CourseSquare</div>
+            <div class="entry-date">2024</div>
+          </div>
+          <div class="entry-subtitle">Software Engineering Intern</div>
+          <ul>
+            <li>
+              Developed and maintained full-stack web application features in an
+              Agile/Scrum team, resolving critical production bugs and improving
+              platform reliability.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Projects & Awards -->
+      <section class="projects">
+        <div class="section-title">Selected Projects & Awards</div>
+
+        <div class="project-entry">
+          <div class="entry-header">
+            <div class="entry-title">
+              MUREX-RR – Automated Research Grant Matching Platform
+            </div>
+            <div class="entry-date">2026</div>
+          </div>
+          <ul>
+            <li>
+              Architected an extension system using a
+              <strong
+                >Golang backend, PostgreSQL, and AI-assisted web
+                crawlers</strong
+              >
+              to automatically discover, extract, and match funding
+              opportunities with medical researchers.
+            </li>
+          </ul>
+        </div>
+
+        <div class="project-entry">
+          <div class="entry-header">
+            <div class="entry-title">
+              Mahidol University Freshman Orientation Platform (Raknong 68)
+            </div>
+            <div class="entry-date">Full-Stack Developer | 2026</div>
+          </div>
+          <ul>
+            <li>
+              Build and deployed a high-concurrency event platform using
+              <strong>Next.js, NeonDB (PostgreSQL), and Vercel</strong> for
+              <strong>4,500+ freshmen and 100+ staff</strong>, featuring
+              university email registration, automated group/staff allocation,
+              attendance check-ins, and an admin operations dashboard.
+            </li>
+            <li>
+              Engineered a built-in
+              <strong
+                >merchandise e-commerce and pre-order fulfillment system</strong
+              >, managing payment workflows, real-time inventory control, and
+              on-site pickup tracking.
+            </li>
+          </ul>
+        </div>
+
+        <div class="project-entry">
+          <div class="entry-header">
+            <div class="entry-title">
+              BlinkDx – AI-Powered Clinical Blink Anomaly Detection
+            </div>
+            <div class="entry-date">Honorable Mention – NSC 2025</div>
+          </div>
+          <ul>
+            <li>
+              Built a computer vision diagnostic platform achieving 95% accuracy
+              in detecting blink irregularities, combining deep learning models
+              with a cross-platform application interface.
+            </li>
+          </ul>
+        </div>
+
+        <div class="project-entry">
+          <div class="entry-header">
+            <div class="entry-title">
+              BONDUP – Real-Time Community & Family Activity App
+            </div>
+            <div class="entry-date">Lead Developer (2025 – 2026)</div>
+          </div>
+          <ul>
+            <li>
+              Engineered and deployed a production mobile application using
+              <strong>Flutter (Clean Architecture)</strong> and RESTful APIs to
+              Google Play Store and Apple App Store, plus high-concurrency web
+              registration systems (<strong>Next.js, Express.js</strong>).
+            </li>
+          </ul>
+        </div>
+
+        <div class="project-entry">
+          <div class="entry-header">
+            <div class="entry-title">
+              VCAT – Clinical Cognitive Assessment & Diagnostic Platform
+            </div>
+            <div class="entry-date">Full-Stack Developer | 2025 – 2026</div>
+          </div>
+          <ul>
+            <li>
+              Engineered a clinical assessment web application using
+              <strong>Next.js and SurrealDB</strong>, featuring secure
+              cookie-based authentication, patient record tracking, customizable
+              14-stage timed test runners, hybrid automated/specialist scoring
+              engines, and diagnostic dashboards.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      function generatePDF() {
+        const element = document.getElementById("resume-content");
+        const opt = {
+          margin: [0.15, 0, 0.15, 0],
+          filename: "Pannawit Krutnak.pdf",
+          image: { type: "jpeg", quality: 0.98 },
+          html2canvas: { scale: 2, useCORS: true },
+          jsPDF: {
+            unit: "in",
+            format: "a4",
+            orientation: "portrait",
+          },
+        };
+
+        html2pdf().set(opt).from(element).save();
+      }
+    </script>
+  </body>
 </html>
